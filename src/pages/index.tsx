@@ -1,6 +1,6 @@
 import { PageProps, graphql } from "gatsby"
 import * as React from "react"
-import Header from "../components/header"
+import Header from "../components/Header"
 import { Link } from "gatsby-theme-material-ui";
 
 // styles
