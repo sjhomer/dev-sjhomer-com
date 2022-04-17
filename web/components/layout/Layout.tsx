@@ -14,7 +14,12 @@ export default function Layout(props: LayoutProps) {
   const {children, ...headProps} = props
 
   const rootPath = `/`
-  const isRootPath = location.pathname === rootPath
+  let isRootPath = false
+  try {
+    isRootPath = window.location.pathname === rootPath
+  } catch (e) {
+    // ignore non-browser environments
+  }
 
   return (
     <div className="layout" data-is-root-path={isRootPath} style={{
