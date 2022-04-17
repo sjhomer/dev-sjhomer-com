@@ -1,13 +1,11 @@
 import * as React from "react"
-import type {PageProps} from 'gatsby'
 import Box from '@mui/material/Box'
 
-type HeaderProps = {
-    title: string,
-    children: JSX.Element,
+interface FooterProps {
+  copyright?: string,
 }
 
-export default function Header({title, children}: HeaderProps) {
+export default function Footer({copyright}: FooterProps) {
   return (
     <Box
       sx={{
@@ -18,8 +16,10 @@ export default function Header({title, children}: HeaderProps) {
         backgroundColor: "primary",
       }}
     >
-        <h1>{title}</h1>
-      {children}
+      © {new Date().getFullYear()}, Built with
+      {` `}
+      <a href="https://www.gatsbyjs.com">Gatsby</a>
+      {copyright}
     </Box>
   )
 }
