@@ -1,6 +1,6 @@
 import * as React from "react"
 import {Helmet} from "react-helmet"
-import {graphql, useStaticQuery} from "gatsby"
+import {useSiteQuery} from "@src/queries"
 
 export interface metaData {
   property: string,
@@ -11,31 +11,17 @@ export interface HeadProps {
   title: string
   description?: string
   lang?: string
-  meta?: Array<metaData>
+  meta?: metaData[]
   image?: { url: string }
 }
 
 export default function Head({title, description, lang = 'en-CA', meta, image}: HeadProps) {
-  const {site} = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            social {
-              twitter
-            }
-          }
-        }
-      }
-    `
-  )
+  const site = useSiteQuery()
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
-  /** @type Array<metaData> */
+  /** @type metaData[] */
   const metaData = [
     ...meta || [],
     {

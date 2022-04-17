@@ -1,7 +1,7 @@
 import * as React from "react"
 import {graphql, PageProps} from "gatsby"
 import {Link} from "gatsby-theme-material-ui"
-import {Layout} from "@src/components/layout"
+import {Layout} from "@web/components/layout"
 
 // markup
 export default function IndexPage({data, location}: PageProps) {

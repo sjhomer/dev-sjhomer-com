@@ -1,13 +1,14 @@
 {
-  "name": "my-gatsby-site",
+  "name": "dev-sjhomer-com",
   "version": "1.0.0",
   "private": true,
-  "description": "my-gatsby-site",
+  "description": "SJ Homer - Code Wizard",
   "keywords": [
     "gatsby"
   ],
   "workspaces": [
-    "./src/*"
+    "./src/*",
+    "./web/*"
   ],
   "scripts": {
     "dev": "gatsby develop",
