@@ -9,7 +9,7 @@ interface LayoutProps extends HeadProps {
 
 export default function Layout({children, ...headProps}: LayoutProps) {
   // @ts-ignore
-  const rootPath = `${__PATH_PREFIX__}/`
+  const rootPath = `/`
   const isRootPath = location.pathname === rootPath
 
   return (

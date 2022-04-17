@@ -8,6 +8,8 @@ export default function IndexPage({data, location}: PageProps) {
   // @ts-ignore
   const posts = data?.allMarkdownRemark?.nodes || []
 
+  console.log('posts', posts)
+
   return (<Layout title={"Home"}>
     <>
       <h1>
