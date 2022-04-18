@@ -1,13 +1,13 @@
 import React from 'react'
 import {ComponentMeta, ComponentStory} from '@storybook/react'
-import IndexPage from "@src/pages"
-import posts from './home.samples'
+import Article from "@src/templates/Article"
+import articleData from "./article.samples"
 
-const Comp = IndexPage
+const Comp = Article
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Pages/home',
+  title: 'Pages/article',
   component: Comp, // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     backgroundColor: {control: 'color'},
@@ -17,12 +17,9 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Comp> = (args) => <Comp {...args} />
 
-export const home = Template.bind({})
+export const article = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-home.args = {
-  data: {
-    allMarkdownRemark: {
-      nodes: posts
-    }
-  }
+article.args = {
+  // @ts-ignore
+  data: articleData
 }

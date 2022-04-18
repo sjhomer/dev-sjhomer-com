@@ -1,5 +1,8 @@
 import {action} from "@storybook/addon-actions"
 
+// ENVs are not passing through to storybook pages, so we need to manually set React 18 flag for gatsby-plugin-image
+global.HAS_REACT_18 = true
+
 // Gatsby's Link overrides:
 // Gatsby Link calls the `enqueue` & `hovering` methods on the global variable ___loader.
 // This global object isn't set in storybook context, requiring you to override it to empty functions (no-op),

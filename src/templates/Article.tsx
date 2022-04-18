@@ -1,8 +1,9 @@
 import * as React from "react"
 import type {PageProps} from "gatsby"
 import {graphql, Link} from "gatsby"
-import {Layout} from "@web/components"
+import {Bio, Layout} from "@web/components"
 import type {site} from '@src/queries'
+import {useImageData} from "@src/hooks"
 
 export type ArticleProps = {
   id: string,
@@ -36,6 +37,13 @@ export default function Article(props: ArticleTemplateProps) {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const {previous, next} = data
 
+  const bioProps = {
+    imageData: useImageData('/images/logo-sjhomer-code-wizard-medium.png'),
+    imageAlt: 'SJHomer Code Wizard',
+  }
+
+  // console.log('Article props', props)
+
   return (
     <Layout title={siteTitle} {...props}>
       <>
@@ -54,7 +62,7 @@ export default function Article(props: ArticleTemplateProps) {
           />
           <hr/>
           <footer>
-            {/*<Bio/>*/}
+            <Bio {...bioProps} />
           </footer>
         </article>
         <nav className="blog-post-nav">
