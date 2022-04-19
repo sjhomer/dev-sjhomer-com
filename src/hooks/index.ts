@@ -1,3 +1,3 @@
-import useImageData from "./useImageData"
+import useGatsbyImage from "./useGatsbyImage"
 
-export {useImageData}
+export {useGatsbyImage}

@@ -1,13 +1,9 @@
 import * as React from "react"
 import useSiteQuery from "@src/queries/useSiteQuery"
-import {GatsbyImage, IGatsbyImageData} from "gatsby-plugin-image"
+import {useGatsbyImage} from "@src/hooks"
 
-export type BioProps = {
-  imageData?: IGatsbyImageData
-  imageAlt?: string
-};
-
-const Bio = ({imageData, imageAlt}: BioProps) => {
+const ArticleByline = () => {
+  const image = useGatsbyImage({src: '/images/logo-sjhomer-code-wizard-medium.png', alt: 'SJHomer Code Wizard'})
   const site = useSiteQuery()
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
@@ -16,7 +12,7 @@ const Bio = ({imageData, imageAlt}: BioProps) => {
 
   return (
     <div className="bio">
-      {imageData && <GatsbyImage image={imageData} alt={imageAlt || ''}/>}
+      {image}
       {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
@@ -30,4 +26,4 @@ const Bio = ({imageData, imageAlt}: BioProps) => {
   )
 }
 
-export default Bio
+export default ArticleByline

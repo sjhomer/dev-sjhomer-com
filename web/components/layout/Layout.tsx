@@ -2,6 +2,7 @@ import * as React from "react"
 import Head, {HeadProps} from "./Head"
 import Header from "./Header"
 import Footer from "./Footer"
+import {Container} from "@mui/material"
 
 // import {colors} from "@src/theme"
 
@@ -27,7 +28,11 @@ export default function Layout(props: LayoutProps) {
     }}>
       <Head {...headProps}/>
       <Header/>
-      <main>{children}</main>
+      <main>
+        <Container maxWidth="lg">
+          {children}
+        </Container>
+      </main>
       <Footer/>
     </div>
   )

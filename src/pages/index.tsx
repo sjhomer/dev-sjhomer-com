@@ -1,58 +1,74 @@
 import * as React from "react"
 import {graphql, PageProps} from "gatsby"
-import {Link} from "gatsby-theme-material-ui"
 import {Layout} from "@web/components/layout"
+import {ArticleGrid} from "@web/components/articles"
+import {Grid} from "@mui/material"
+import {Logo} from "@web/components/media"
+import Typography from '@mui/material/Typography'
+import {Timeline, TimelineData} from "@web/components/grids"
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
+import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard'
+import PhonelinkIcon from '@mui/icons-material/Phonelink'
 
 // markup
 export default function IndexPage({data, location}: PageProps) {
   // @ts-ignore
   const posts = data?.allMarkdownRemark?.nodes || []
 
+  /** @type {TimelineData[]} */
+  const timelineData = [{
+    supporting: 'June 2022',
+    title: 'Seeking new opportunities',
+    caption: 'Frontend Development Lead',
+    icon: {
+      icon: <EmojiEventsIcon/>
+    },
+    iconColor: "secondary"
+  },
+    {
+      supporting: 'Abc',
+      title: 'Timeline',
+      caption: 'This rocks!',
+      icon: {
+        icon: <DeveloperBoardIcon/>
+      },
+    },
+    {
+      supporting: 'Abc',
+      title: 'Timeline',
+      caption: 'This rocks!',
+      icon: {
+        icon: <PhonelinkIcon/>
+      },
+    }
+  ]
+
   // console.log('posts', posts)
 
   return (<Layout title={"Home"}>
     <>
-      <h1>
-        Congratulations
-        <br/>
-        <span>— you just made a Gatsby site! </span>
-        🎉🎉🎉
-      </h1>
-      <p>
-        Edit <code>src/pages/index.tsx</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ol style={{listStyle: `none`}}>
-        {// @ts-ignore
-          posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
-
-            return (<li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>)
-          })}
-      </ol>
+      <Grid container spacing={5}>
+        <Grid item xs={12} md={'auto'}>
+          <Logo/>
+        </Grid>
+        <Grid item xs={12} md={9} flexGrow={1} sx={{
+          h1: {
+            fontSize: {
+              md: '3rem'
+            }, mt: {
+              md: 2,
+            }, // fontWeight: 'bold',
+            // marginBottom: '1rem',
+          }
+        }}>
+          <Typography variant="h1" gutterBottom>
+            Welcome, and thanks for stopping by!
+          </Typography>
+          <Timeline data={timelineData}/>
+          <Typography variant="h2"></Typography>
+        </Grid>
+      </Grid>
+      <ArticleGrid articles={posts}/>
     </>
   </Layout>)
 }

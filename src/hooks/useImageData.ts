@@ -10,7 +10,7 @@ import {useEffect, useState} from 'react'
  *
  * @param filename Assumes src/images as base directory (set in package.json storybook script)
  * @param layout optional override for gatsby layout parameter
- * @returns
+ * @return {IGatsbyImageData}
  */
 export default function useImageData(filename: string, layout: Layout = 'constrained',) {
   // a default is provided so component types can treat it as defined

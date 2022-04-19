@@ -1,7 +1,11 @@
 import {Layout} from './layout'
-import Bio from './Bio'
+import * as Articles from './articles'
+import * as Grids from './grids'
+import * as Media from './media'
 
 export {
-  Bio,
+  Articles,
+  Media,
   Layout,
+  Grids,
 }
