@@ -16,7 +16,7 @@ const timelineData = [{
     supporting: <span>Dec 2014 &mdash;&gt; May 2022</span>,
     title: 'Therefore Interactive',
     caption:
-      <span>
+      <span><br/>
         Frontend Development Lead, 3y 1m<br/>
         Technical Architect, 1y<br/>
         Senior Developer, 3y 6m
@@ -29,7 +29,7 @@ const timelineData = [{
     supporting: <span>Dec 2014 &mdash;&gt; Oct 2009</span>,
     title: 'RC Design',
     caption:
-      <span>
+      <span><br/>
         Web Developer, 5y 3m
       </span>,
     icon: {
@@ -40,7 +40,7 @@ const timelineData = [{
     supporting: <span>Sep 2009 &mdash;&gt; Apr 2005</span>,
     title: 'SteelSeries',
     caption:
-      <span>
+      <span><br/>
         Web Developer, 1y 11m<br/>
         Intranet Web Developer, 1y 6m<br/>
         QA Engineer, 1y 3m
