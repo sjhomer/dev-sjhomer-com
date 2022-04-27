@@ -15,9 +15,9 @@ interface TimelineIcon {
 }
 
 export type TimelineData = {
-  supporting?: string
+  supporting?: string|JSX.Element
   title: string
-  caption?: string
+  caption?: string|JSX.Element
   icon?: TimelineIcon
   align?: 'left' | 'right'
 }
