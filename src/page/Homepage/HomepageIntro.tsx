@@ -7,7 +7,7 @@ export default function HomepageIntro() {
   return <Grid container sx={{mb: 2}} spacing={3}>
     <Grid item xs={12} md={5}>
       <Typography variant="h3" component="h1" sx={{mb: 2}}>Welcome, and thanks for stopping by!</Typography>
-      <Typography variant="h5" component="div" sx={{mb: 2}}>I’m Homer, and I’ve been in Web Development for almost two
+      <Typography variant="h5" component="div" sx={{mb: 2}}>I’m Homer. I’ve been in Web Development for almost two
         decades,
         specializing in Frontend for the past ten years, having transitioned into leading teams for over four
         years.
