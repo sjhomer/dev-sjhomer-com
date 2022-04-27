@@ -1,4 +1,5 @@
-import useSiteQuery, {site} from "./useSiteQuery"
+import type {site} from './useSiteQuery'
+import useSiteQuery from "./useSiteQuery"
 
 export {
   useSiteQuery,
