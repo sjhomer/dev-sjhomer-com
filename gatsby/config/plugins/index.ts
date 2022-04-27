@@ -18,6 +18,7 @@ const plugins = [
   ...gatsbySourceFilesystem,
   gatsbyTransformerRemark,
   gatsbyPluginFeed,
+  "gatsby-plugin-mdx",
 ]
 
 export default plugins

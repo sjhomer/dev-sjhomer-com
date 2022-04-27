@@ -57,9 +57,7 @@ export default function Timeline({data}: TimelineProps) {
               <Typography variant="h6" component="span">
                 {item.title}
               </Typography>
-              {item.caption && (
-                <Typography>{item.caption}</Typography>
-              )}
+              {item.caption}
             </TimelineContent>
           </TimelineItem>
         )
