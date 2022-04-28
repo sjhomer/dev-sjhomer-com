@@ -4,6 +4,7 @@ import gatsbyPluginGoogleAnalytics from "./gatsby-plugin-google-analytics"
 import gatsbySourceFilesystem from "./gatsby-source-filesystem"
 import gatsbyTransformerRemark from "./gatsby-transformer-remark"
 import gatsbyPluginFeed from "./gatsby-plugin-feed"
+import gatsbyPluginScrollReveal from './gatsby-plugin-scroll-reveal'
 
 const plugins = [
   gatsbyPluginManifest,
@@ -19,6 +20,7 @@ const plugins = [
   gatsbyTransformerRemark,
   gatsbyPluginFeed,
   "gatsby-plugin-mdx",
+  gatsbyPluginScrollReveal,
 ]
 
 export default plugins

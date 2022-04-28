@@ -24,6 +24,7 @@ export default function Layout(props: LayoutProps) {
   return (
     <div className="layout" data-is-root-path={isRootPath} style={{
       // backgroundColor: colors.backgroundBlue
+      marginBottom: "100px",
     }}>
       <Head {...headProps}/>
       <Header/>

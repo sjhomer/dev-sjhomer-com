@@ -5,6 +5,12 @@ const config = {
     mode: 'dark',
   },
   typography: {
+    subtitle1: {
+      fontSize: 20,
+    },
+    body1: {
+      fontSize: 18,
+    },
     fontFamily: [
       'Ubuntu',
       'sans-serif'
