@@ -1,12 +1,12 @@
 import * as React from 'react'
 import {useTheme} from '@mui/material/styles'
-import Typography from "@mui/material/Typography"
-import Grid from "@mui/material/Grid"
-import HomepageTimeline from "./HomepageTimeline"
-import {Separators} from "@web/components/grids"
+import Typography from '@mui/material/Typography'
+import Grid from '@mui/material/Grid'
+import HomepageTimeline from './HomepageTimeline'
+import {Separators} from '@web/components/grids'
 import Slide from '@mui/material/Slide'
-import Box from "@mui/material/Box"
-import Grow from "@mui/material/Grow"
+import Box from '@mui/material/Box'
+import Grow from '@mui/material/Grow'
 
 export default function HomepageIntro() {
   const theme = useTheme()
@@ -33,7 +33,7 @@ export default function HomepageIntro() {
         <Grow in timeout={800} easing={theme.transitions.easing.easeOut}>
           <Box>
             <Typography variant="subtitle1" gutterBottom marginTop={2}>
-              {`It always amazing me how the Web continues to grow. Macromeida Flash was an interesting time. 😅 And, can you recall when JavaScript used to get a bad rep during the jQuery era?`}
+              {`It always amazing me how the Web continues to grow. Macromeida Flash was an interesting time. 😅 And, can you recall when JS used to get a bad rep during the jQuery era?`}
             </Typography>
           </Box>
         </Grow>
@@ -43,7 +43,7 @@ export default function HomepageIntro() {
               variant="subtitle1"
               gutterBottom
               marginTop={2}
-              dangerouslySetInnerHTML={{__html: `Now, JavaScript has become the herald of most modern web sites and applications, with libraries like React and Vuejs, and frameworks like Gatsby and Nextjs, and the many <em>many</em> other flavours that keep appearing almost daily.`}}
+              dangerouslySetInnerHTML={{__html: `Now, JS/TS have become the herald of most modern frontends and applications, with libraries like React and Vuejs, and frameworks like Gatsby and Nextjs, and the many <em>many</em> other flavours that keep appearing almost daily.`}}
             />
           </Box>
         </Grow>

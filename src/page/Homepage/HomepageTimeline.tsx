@@ -1,11 +1,11 @@
-import * as React from "react"
-import EmojiEventsIcon from "@mui/icons-material/EmojiEvents"
-import DeveloperBoardIcon from "@mui/icons-material/DeveloperBoard"
-import {Timeline} from "@web/components/grids"
+import * as React from 'react'
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
+import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard'
+import {Timeline} from '@web/components/grids'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import Link from '@mui/material/Link'
 import Tooltip from '@mui/material/Tooltip'
-import HelpIcon from '@mui/icons-material/Help'
+import InfoIcon from '@mui/icons-material/Info'
 import siteConfig from '@src/config'
 
 const linkedInLink = <Link
@@ -28,7 +28,7 @@ const timelineData = [{
   icon: {
     icon: <EmojiEventsIcon/>
   },
-  iconColor: "secondary"
+  iconColor: 'secondary'
 },
   {
     supporting: <span>Dec 2014 &mdash;&gt; May 2022</span>,
@@ -60,7 +60,7 @@ const timelineData = [{
       SteelSeries
       &nbsp;
       <Tooltip title="And formerly, Ideazon">
-        <HelpIcon/>
+        <InfoIcon/>
     </Tooltip>
     </span>,
     caption:
