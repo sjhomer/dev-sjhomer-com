@@ -1,13 +1,15 @@
 import * as React from 'react'
+import {useTheme} from '@mui/material/styles'
 import Typography from "@mui/material/Typography"
 import Grid from "@mui/material/Grid"
 import HomepageTimeline from "./HomepageTimeline"
 import {Separators} from "@web/components/grids"
 import Slide from '@mui/material/Slide'
 import Box from "@mui/material/Box"
-import {Grow} from "@mui/material"
+import Grow from "@mui/material/Grow"
 
 export default function HomepageIntro() {
+  const theme = useTheme()
   return (<>
     <Grid
       container
@@ -24,29 +26,32 @@ export default function HomepageIntro() {
           // color: 'text.primary',
         }
       }}>
-        <Typography variant="h4" component="h1" gutterBottom>Welcome, thanks for stopping by!</Typography>
+        <Typography variant="h4" component="h1" gutterBottom>Welcome, thanks for stopping by! 👋🏻</Typography>
         <Typography variant="h5" component="div" gutterBottom>
-          {`I’m Homer. Being in Web Development for almost two decades, I've specializing in Frontend for the past ten years, having transitioned into leading teams for over four years.`}
+          {`I’m Homer. I've been in Web Development for almost two decades, specializing in Frontend for over half my career, and, transitioned into leading teams for the past four years.`}
         </Typography>
-        <Grow in timeout={800}>
+        <Grow in timeout={800} easing={theme.transitions.easing.easeOut}>
           <Box>
             <Typography variant="subtitle1" gutterBottom marginTop={2}>
-              {`It always amazing me how the Web has continued to grow. I’ve recall when JavaScript used to get a bad rep during the jQuery era.`}
+              {`It always amazing me how the Web continues to grow. Macromeida Flash was an interesting time. 😅 And, can you recall when JavaScript used to get a bad rep during the jQuery era?`}
             </Typography>
           </Box>
         </Grow>
-        <Grow in timeout={1500}>
+        <Grow in timeout={1500} easing={theme.transitions.easing.easeOut}>
           <Box>
-            <Typography variant="subtitle1" gutterBottom marginTop={2}>
-              {`Now, it’s becoming the herald of most modern web sites and applications today, with libraries like React and Vuejs, frameworks like Gatsby and Nextjs. And many other flavours keep popping up almost daily.`}
-            </Typography>
+            <Typography
+              variant="subtitle1"
+              gutterBottom
+              marginTop={2}
+              dangerouslySetInnerHTML={{__html: `Now, JavaScript has become the herald of most modern web sites and applications, with libraries like React and Vuejs, and frameworks like Gatsby and Nextjs, and the many <em>many</em> other flavours that keep appearing almost daily.`}}
+            />
           </Box>
         </Grow>
       </Grid>
       <Grid item xs={12} md={7} sx={{
         width: '100%',
       }}>
-        <Slide direction="left" in mountOnEnter timeout={500}>
+        <Slide direction="left" in mountOnEnter timeout={500} easing={theme.transitions.easing.easeOut}>
           <Box>
             <HomepageTimeline/>
           </Box>

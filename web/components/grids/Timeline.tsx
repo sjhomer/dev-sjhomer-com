@@ -15,9 +15,9 @@ interface TimelineIcon {
 }
 
 export type TimelineData = {
-  supporting?: string|JSX.Element
-  title: string
-  caption?: string|JSX.Element
+  supporting?: string | JSX.Element
+  title: string | JSX.Element
+  caption?: string | JSX.Element
   icon?: TimelineIcon
   align?: 'left' | 'right'
 }
@@ -40,7 +40,11 @@ export default function Timeline({data}: TimelineProps) {
   // console.log('Timeline', list)
 
   return (
-    <MuiTimeline position="alternate">
+    <MuiTimeline position="alternate" sx={{
+      '.MuiTypography-caption': {
+        fontSize: 16,
+      },
+    }}>
       {list.map((item: TimelineData, i) => {
         return (
           <TimelineItem key={i}>
@@ -56,8 +60,10 @@ export default function Timeline({data}: TimelineProps) {
             <TimelineContent sx={{py: '12px', px: 2}}>
               <Typography variant="h6" component="span">
                 {item.title}
+              </Typography><br/>
+              <Typography variant="caption" component="span">
+                {item.caption}
               </Typography>
-              {item.caption}
             </TimelineContent>
           </TimelineItem>
         )

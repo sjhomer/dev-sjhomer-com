@@ -1,11 +1,12 @@
 import type {GatsbyConfig} from "gatsby"
-import {plugins, siteMetadata} from "./gatsby/config"
+import {plugins} from "./gatsby/config"
+import siteConfig from './src/config'
 
 // Load the .env files
 require('dotenv').config()
 
 const config: GatsbyConfig = {
-  siteMetadata,
+  siteMetadata: siteConfig.siteMetadata,
   plugins
 }
 

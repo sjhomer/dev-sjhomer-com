@@ -2,6 +2,7 @@ import * as React from "react"
 import {graphql, PageProps} from "gatsby"
 import {Layout} from "@web/components/layout"
 import {Homepage} from '@src/page'
+// import {AudioPlayer} from "@web/components/media"
 
 // markup
 export default function IndexPage({data, location}: PageProps) {
@@ -9,6 +10,7 @@ export default function IndexPage({data, location}: PageProps) {
 
   return (<Layout title={"dev.sjhomer.com"}>
     <>
+      {/*<AudioPlayer src={'/assets/audio/teaser.mp3'} title={'Listen to this page'}/>*/}
       <Homepage.HomepageIntro/>
       <Homepage.HomepageCollege/>
       <Homepage.HomepageEntryJob/>

@@ -1,3 +1,8 @@
+const links = {
+  linkedin: 'https://www.linkedin.com/in/seanjhomer/',
+  resume: '/assets/downloads/sjhomer-resume.pdf'
+}
+
 const siteMetadata = {
   title: `SJ Homer`,
   description: `SJ Homer - Code Wizard.`,
@@ -11,4 +16,7 @@ const siteMetadata = {
   },
 }
 
-export default siteMetadata
+export default {
+  links,
+  siteMetadata,
+}

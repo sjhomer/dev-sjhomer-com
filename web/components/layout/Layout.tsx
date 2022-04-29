@@ -2,6 +2,8 @@ import * as React from "react"
 import Head, {HeadProps} from "./Head"
 import Header from "./Header"
 import {Container} from "@mui/material"
+import Footer from "./Footer"
+import {useTheme} from "@mui/material/styles"
 
 // import {colors} from "@src/theme"
 
@@ -10,6 +12,8 @@ interface LayoutProps extends HeadProps {
 }
 
 export default function Layout(props: LayoutProps) {
+  const theme = useTheme()
+
   // @ts-ignore
   const {children, ...headProps} = props
 
@@ -24,7 +28,7 @@ export default function Layout(props: LayoutProps) {
   return (
     <div className="layout" data-is-root-path={isRootPath} style={{
       // backgroundColor: colors.backgroundBlue
-      marginBottom: "100px",
+      marginBottom: theme.spacing(25),
     }}>
       <Head {...headProps}/>
       <Header/>
@@ -33,7 +37,7 @@ export default function Layout(props: LayoutProps) {
           {children}
         </Container>
       </main>
-      {/*<Footer/>*/}
+      <Footer/>
     </div>
   )
 }
