@@ -33,7 +33,7 @@ export default function HomepageIntro() {
         <Grow in timeout={800} easing={theme.transitions.easing.easeOut}>
           <Box>
             <Typography variant="subtitle1" gutterBottom marginTop={2}>
-              {`It always amazing me how the Web continues to grow. Macromeida Flash was an interesting time. 😅 And, can you recall when JS used to get a bad rep during the jQuery era?`}
+              {`It always amazing me how the Web continues to grow. Macromeida Flash was an interesting time. 😅 And, can you recall when JavaScript used to get a bad rep during the jQuery era?`}
             </Typography>
           </Box>
         </Grow>
