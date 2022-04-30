@@ -16,6 +16,10 @@ export default function HomepageIntro() {
       sx={{mb: 2}}
       spacing={3}
     >
+      <Grid item xs={12}>
+        <Typography variant="h2" component="h1" textAlign={'center'} gutterBottom>SJ Homer, Code Wizard
+          🧙🏼‍️</Typography>
+      </Grid>
       <Grid item xs={12} md={5} sx={{
         textAlign: 'justify',
         h1: {
@@ -26,17 +30,11 @@ export default function HomepageIntro() {
           // color: 'text.primary',
         }
       }}>
-        <Typography variant="h4" component="h1" gutterBottom>Welcome, thanks for stopping by! 👋🏻</Typography>
-        <Typography variant="h5" component="div" gutterBottom>
-          {`I’m Homer. I've been in Web Development for almost two decades, specializing in Frontend for over half my career, and, transitioned into leading teams for the past four years.`}
+        <Typography variant="h5" component="div" fontWeight={'bold'} gutterBottom>Welcome, thanks for stopping by!
+          👋🏻</Typography>
+        <Typography variant="subtitle1" gutterBottom marginTop={2}>
+          {`It's always amazed me how the Web continues to grow. Macromeida Flash was an interesting time. 😅 And, can you recall when JavaScript used to get a bad rep during the jQuery era?`}
         </Typography>
-        <Grow in timeout={800} easing={theme.transitions.easing.easeOut}>
-          <Box>
-            <Typography variant="subtitle1" gutterBottom marginTop={2}>
-              {`It always amazing me how the Web continues to grow. Macromeida Flash was an interesting time. 😅 And, can you recall when JavaScript used to get a bad rep during the jQuery era?`}
-            </Typography>
-          </Box>
-        </Grow>
         <Grow in timeout={1500} easing={theme.transitions.easing.easeOut}>
           <Box>
             <Typography
@@ -47,6 +45,14 @@ export default function HomepageIntro() {
             />
           </Box>
         </Grow>
+        <Grow in timeout={800} easing={theme.transitions.easing.easeOut}>
+          <Box>
+            <Typography variant="h5" component="div" gutterBottom>
+              {`I’m Homer. I've been in Web Development for almost two decades, specializing in Frontend for over half my career, and, transitioned into leading teams for the past four years.`}
+            </Typography>
+          </Box>
+        </Grow>
+
       </Grid>
       <Grid item xs={12} md={7} sx={{
         width: '100%',

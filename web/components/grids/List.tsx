@@ -18,7 +18,7 @@ interface ListProps {
 export default function List({items = [], ...props}: ListProps) {
   return <MuiList {...props} >
     {items.map(({label, caption = null, icon = null}) =>
-      <ListItem>
+      <ListItem key={encodeURI(label)}>
         <ListItemAvatar>
           {icon && <Avatar>
             {icon}

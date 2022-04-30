@@ -7,8 +7,12 @@ export default function FooterSeparator() {
       zIndex: -1,
       position: 'fixed',
       bottom: 0,
-      width: '100vw',
-      height: '10px',
+      width: '100%',
+      height: {
+        xs: 35,
+        sm: 25,
+        lg: 10,
+      },
       background: '#c1c1c1',
     }}
     dangerouslySetInnerHTML={{

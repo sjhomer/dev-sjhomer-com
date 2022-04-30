@@ -1,9 +1,9 @@
-import * as React from "react"
-import Head, {HeadProps} from "./Head"
-import Header from "./Header"
-import {Container} from "@mui/material"
-import Footer from "./Footer"
-import {useTheme} from "@mui/material/styles"
+import * as React from 'react'
+import Head, {HeadProps} from './Head'
+import {Container} from '@mui/material'
+import Footer from './Footer/Footer'
+import {useTheme} from '@mui/material/styles'
+import Box from '@mui/material/Box'
 
 // import {colors} from "@src/theme"
 
@@ -26,18 +26,22 @@ export default function Layout(props: LayoutProps) {
   }
 
   return (
-    <div className="layout" data-is-root-path={isRootPath} style={{
-      // backgroundColor: colors.backgroundBlue
-      marginBottom: theme.spacing(25),
+    <Box className="layout" data-is-root-path={isRootPath} sx={{
+      mb: {
+        xs: theme.spacing(15),
+        sm: theme.spacing(20),
+        md: theme.spacing(25)
+      },
+      pt: theme.spacing(5),
     }}>
       <Head {...headProps}/>
-      <Header/>
+      {/*<Header/>*/}
       <main>
         <Container maxWidth="lg">
           {children}
         </Container>
       </main>
       <Footer/>
-    </div>
+    </Box>
   )
 }
