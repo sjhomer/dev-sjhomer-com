@@ -14,7 +14,7 @@ export default function useFooterState() {
     const {scrollY: currentScrollPos, innerHeight} = safeWindow
     const maxScroll = document.body.scrollHeight - innerHeight
     // If we scroll down, hide the footer, unless we're near the end of the page. On scroll up, show it again.
-    const display = currentScrollPos < innerHeight || currentScrollPos < state.previousScroll ||
+    const display = currentScrollPos < (innerHeight * .7) || currentScrollPos < state.previousScroll ||
       currentScrollPos >= maxScroll - 300
 
     setState({
