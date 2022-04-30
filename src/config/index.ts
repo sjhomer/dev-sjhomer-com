@@ -1,6 +1,8 @@
 const links = {
   linkedin: 'https://www.linkedin.com/in/seanjhomer/',
-  resume: '/assets/downloads/sjhomer-resume.pdf'
+  resume: '/assets/downloads/sjhomer-resume.pdf',
+  homerOnOlympus: 'https://anchor.fm/homer-on-olympus',
+  evergrowthMastermind: 'https://anchor.fm/evergrowth-mastermind',
 }
 
 const siteMetadata = {

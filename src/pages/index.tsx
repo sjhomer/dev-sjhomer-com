@@ -2,7 +2,7 @@ import * as React from 'react'
 import {PageProps} from 'gatsby'
 import {Layout} from '@web/components/layout'
 import {Homepage} from '@src/page'
-// import {AudioPlayer} from "@web/components/media"
+// import {AudioPlayer} from "@web/components/cards"
 
 // markup
 export default function IndexPage({data, location}: PageProps) {
