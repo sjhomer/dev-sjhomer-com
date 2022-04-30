@@ -11,10 +11,11 @@ export default function useFooterState() {
    * On scroll, hide the footer as the user scrolls down, but show it again on scroll up.
    */
   const hideShowFooterOnScroll = React.useCallback(() => {
-    const {scrollY: currentScrollPos} = safeWindow
-    const maxScroll = document.body.scrollHeight - safeWindow.innerHeight
+    const {scrollY: currentScrollPos, innerHeight} = safeWindow
+    const maxScroll = document.body.scrollHeight - innerHeight
     // If we scroll down, hide the footer, unless we're near the end of the page. On scroll up, show it again.
-    const display = currentScrollPos < state.previousScroll || currentScrollPos >= maxScroll - 300
+    const display = currentScrollPos < innerHeight || currentScrollPos < state.previousScroll ||
+      currentScrollPos >= maxScroll - 300
 
     setState({
       display,
