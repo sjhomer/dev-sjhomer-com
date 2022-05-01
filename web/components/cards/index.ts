@@ -1,4 +1,4 @@
 import AudioPlayer from './AudioPlayer'
-import CtaLinkCard from './CtaLinkCard'
+import CtaLinkCard, {CtaLinkCardProps} from './CtaLinkCard'
 
-export {AudioPlayer, CtaLinkCard}
+export {AudioPlayer, CtaLinkCard, CtaLinkCardProps}

@@ -3,12 +3,43 @@ import {useTheme} from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import {Separators} from '@web/components/grids'
-import {CtaLinkCard} from '@web/components/cards'
+import {CtaLinkCard, CtaLinkCardProps} from '@web/components/cards'
 import siteConfig from '@src/config'
 import Box from '@mui/material/Box'
 
 export default function HomepageIntro() {
   const theme = useTheme()
+
+  /** @type {CtaLinkCardProps[]} */
+  const ctas = [
+    {
+      description: '\'A leadership and personal development mastermind I co-founded and lead form 2017-2021, with over a years worth recorded in a talk show.\'',
+      imageData: {
+        src: '/assets/images/evergrowth-mastermind-logo.png',
+        alt: 'Homer On Olympus logo',
+      },
+      links: [
+        {
+          label: 'Have a Listen',
+          href: siteConfig.links.evergrowthMastermind,
+        },
+      ],
+    },
+    {
+      description: 'An fun audio drama which I wrote, performed, and produced over the course of 2021, voicing a total of 9 unique characters across 23 episodes.',
+      imageData: {
+        src: '/assets/images/homer-on-olympus-logo.png',
+        alt: 'Homer On Olympus logo',
+      },
+      links: [
+        {
+          label: 'Have a Listen',
+          href: siteConfig.links.homerOnOlympus,
+        },
+      ],
+    },
+  ]
+
   return (
     <Box className={'homepage-creative'}>
       <Grid container>
@@ -72,34 +103,10 @@ export default function HomepageIntro() {
           },
         }}
         >
-          <CtaLinkCard
-            description={'A leadership and personal development mastermind I co-founded and lead form 2017-2021, with over a years worth recorded in a talk show.'}
-            imageData={{
-              src: '/assets/images/evergrowth-mastermind-logo.png',
-              alt: 'Homer On Olympus logo',
-            }}
-            links={[
-              {
-                label: 'Have a Listen',
-                href: siteConfig.links.evergrowthMastermind,
-              },
-            ]}
-          />
+          <CtaLinkCard {...ctas[0]} />
         </Grid>
         <Grid item xs={12} md={4}>
-          <CtaLinkCard
-            description={'An fun audio drama which I wrote, performed, and produced over the course of 2021, voicing a total of 9 unique characters across 23 episodes.'}
-            imageData={{
-              src: '/assets/images/homer-on-olympus-logo.png',
-              alt: 'Homer On Olympus logo',
-            }}
-            links={[
-              {
-                label: 'Have a Listen',
-                href: siteConfig.links.homerOnOlympus,
-              },
-            ]}
-          />
+          <CtaLinkCard {...ctas[1]} />
         </Grid>
         <Grid item xs={0} md={2} />
       </Grid>

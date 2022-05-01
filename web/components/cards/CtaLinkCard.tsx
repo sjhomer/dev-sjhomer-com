@@ -9,10 +9,12 @@ import {useGatsbyImage} from '@src/hooks'
 
 interface CtaLinkCardLink {
   label: string,
-  href: string,
+  href?: string,
+
+  onClick?(): void,
 }
 
-interface CtaLinkCardProps {
+export type CtaLinkCardProps = {
   title?: string,
   description?: string,
   links?: CtaLinkCardLink[],
@@ -39,10 +41,16 @@ export default function CtaLinkCard({title, description, imageData, links = []}:
         </Typography>}
       </CardContent>
       {links?.length > 0 && <CardActions>
-        {links?.map((link) => <Button
-          key={encodeURI(link.label)} size="small" href={link.href}
-          target="_blank"
-        >{link.label}</Button>)}
+        {links?.map((link) =>
+          // @ts-ignore
+          <Button
+            key={encodeURI(link.label)}
+            size="small"
+            href={link.href}
+            onClick={link.onClick}
+            target="_blank"
+          >{link.label}
+          </Button>)}
       </CardActions>}
     </Card>
   )
