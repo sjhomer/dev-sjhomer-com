@@ -13,6 +13,7 @@ A simple but tactful portfolio by [SJ Homer](https://dev.sjhomer.com)
 
 - [gatsby-plugin-scroll-reveal](https://www.gatsbyjs.org/packages/gatsby-plugin-scroll-reveal/)
 - [use-sound](https://www.npmjs.com/package/use-sound)
+- [devicon](https://www.npmjs.com/package/devicon)
 
 ## Inspired by
 

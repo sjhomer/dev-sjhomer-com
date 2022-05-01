@@ -1,4 +1,4 @@
-import {createTheme} from "@mui/material"
+import {createTheme} from '@mui/material'
 
 const config = {
   palette: {
@@ -10,11 +10,22 @@ const config = {
     },
     body1: {
       fontSize: 18,
+      lineHeight: 1.75,
     },
     fontFamily: [
       'Ubuntu',
-      'sans-serif'
+      'sans-serif',
     ].join(','),
+  },
+  components: {
+    // Name of the component
+    MuiTypography: {
+      styleOverrides: {
+        gutterBottom: {
+          marginBottom: 16,
+        },
+      },
+    },
   },
 }
 

@@ -17,30 +17,32 @@ const linkedInLink = <Link
     '.MuiSvgIcon-root': {
       marginRight: '0.5rem',
     },
-  }}>
-  <LinkedInIcon/> Let's Connect!
+  }}
+>
+  <LinkedInIcon /> Let's Connect!
 </Link>
 
-const timelineData = [{
-  supporting: 'Jun 2022',
-  title: 'Seeking new opportunities',
-  caption: linkedInLink,
-  icon: {
-    icon: <EmojiEventsIcon/>
+const timelineData = [
+  {
+    supporting: 'Jun 2022',
+    title: 'Seeking new opportunities',
+    caption: linkedInLink,
+    icon: {
+      icon: <EmojiEventsIcon />,
+    },
+    iconColor: 'secondary',
   },
-  iconColor: 'secondary'
-},
   {
     supporting: <span>Dec 2014 &mdash;&gt; May 2022</span>,
     title: 'Therefore Interactive',
     caption:
       <span>
-        Frontend Development Lead, 3y 1m<br/>
-        Technical Architect, 1y<br/>
+        Frontend Development Lead, 3y 1m<br />
+        Technical Architect, 1y<br />
         Senior Developer, 3y 6m
       </span>,
     icon: {
-      icon: <DeveloperBoardIcon/>
+      icon: <DeveloperBoardIcon />,
     },
   },
   {
@@ -51,7 +53,7 @@ const timelineData = [{
         Web Developer, 5y 3m
       </span>,
     icon: {
-      icon: <DeveloperBoardIcon/>
+      icon: <DeveloperBoardIcon />,
     },
   },
   {
@@ -60,21 +62,21 @@ const timelineData = [{
       SteelSeries
       &nbsp;
       <Tooltip title="And formerly, Ideazon">
-        <InfoIcon/>
+        <InfoIcon />
     </Tooltip>
     </span>,
     caption:
       <span>
-        Web Developer, 1y 11m<br/>
-        Intranet Web Developer, 1y 6m<br/>
+        Web Developer, 1y 11m<br />
+        Intranet Web Developer, 1y 6m<br />
         QA Engineer, 1y 3m
       </span>,
     icon: {
-      icon: <DeveloperBoardIcon/>
+      icon: <DeveloperBoardIcon />,
     },
   },
 ]
 
-const HomepageTimeline = () => <Timeline data={timelineData}/>
+const HomepageTimeline = () => <Timeline data={timelineData} />
 
 export default HomepageTimeline

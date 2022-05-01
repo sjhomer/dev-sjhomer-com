@@ -26,7 +26,7 @@ export default function CtaLinkCard({title, description, imageData, links = []}:
   const image = useGatsbyImage(imageData)
 
   return (
-    <Card sx={{maxWidth: 345}}>
+    <Card sx={{maxWidth: 345}} variant="outlined">
       {image && <CardMedia>
         {image}
       </CardMedia>}
@@ -39,8 +39,10 @@ export default function CtaLinkCard({title, description, imageData, links = []}:
         </Typography>}
       </CardContent>
       {links?.length > 0 && <CardActions>
-        {links?.map((link) => <Button key={encodeURI(link.label)} size="small" href={link.href}
-                                      target="_blank">{link.label}</Button>)}
+        {links?.map((link) => <Button
+          key={encodeURI(link.label)} size="small" href={link.href}
+          target="_blank"
+        >{link.label}</Button>)}
       </CardActions>}
     </Card>
   )

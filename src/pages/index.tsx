@@ -8,15 +8,19 @@ import {Homepage} from '@src/page'
 export default function IndexPage({data, location}: PageProps) {
   // console.log('posts', posts)
 
-  return (<Layout title={'dev.sjhomer.com'}>
-    <>
-      {/*<AudioPlayer src={'/assets/audio/teaser.mp3'} title={'Listen to this page'}/>*/}
-      <Homepage.HomepageIntro/>
-      <Homepage.HomepageCollege/>
-      <Homepage.HomepageEntryJob/>
-      <Homepage.HomepageIntermediateJob/>
-      <Homepage.HomepageSeniorJob/>
-      <Homepage.HomepageWrapup/>
-    </>
-  </Layout>)
+  return (
+    <Layout title={'dev.sjhomer.com'}>
+      <>
+        {/*<AudioPlayer src={'/assets/audio/teaser.mp3'} title={'Listen to this page'}/>*/}
+        <Homepage.HomepageIntro />
+        <Homepage.HomepageBio />
+        <Homepage.HomepageCreative />
+        <Homepage.HomepageCollege />
+        <Homepage.HomepageEntryJob />
+        <Homepage.HomepageIntermediateJob />
+        <Homepage.HomepageSeniorJob />
+        <Homepage.HomepageWrapup />
+      </>
+    </Layout>
+  )
 }
