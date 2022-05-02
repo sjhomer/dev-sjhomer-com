@@ -43,6 +43,8 @@ export default function useModal({sx, TransitionComp = Fade, title, content, act
     scroll={'body'}
     fullScreen={fullScreen}
     sx={state.modalStyles}
+    // For SEO, keep mounted on the DOM.
+    keepMounted
   >
     {/*// @ts-ignore*/}
     <DialogTitle id={`${state.id}-modal-title`} sx={{m: 0, p: 2}}>

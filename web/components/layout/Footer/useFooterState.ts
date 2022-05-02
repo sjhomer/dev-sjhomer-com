@@ -2,10 +2,12 @@ import * as React from 'react'
 import {safeWindow} from '@web/components/lib'
 
 export default function useFooterState() {
-  const [state, setState] = React.useState(() => ({
-    display: false,
-    previousScroll: safeWindow?.scrollY,
-  }))
+  const [state, setState] = React.useState(() => (
+    {
+      display: false,
+      previousScroll: safeWindow?.scrollY,
+    }
+  ))
 
   /**
    * On scroll, hide the footer as the user scrolls down, but show it again on scroll up.
@@ -14,7 +16,10 @@ export default function useFooterState() {
     const {scrollY: currentScrollPos, innerHeight} = safeWindow
     const maxScroll = document.body.scrollHeight - innerHeight
     // If we scroll down, hide the footer, unless we're near the end of the page. On scroll up, show it again.
-    const display = currentScrollPos < (innerHeight * .7) || currentScrollPos < state.previousScroll ||
+    const display = currentScrollPos < (
+        innerHeight * .7
+      ) || currentScrollPos < state.previousScroll
+      ||
       currentScrollPos >= maxScroll - 300
 
     setState({
@@ -36,10 +41,12 @@ export default function useFooterState() {
   React.useLayoutEffect(() => {
     // Slightly offset the load of the footer animation.
     setTimeout(() => {
-      setState((prevState) => ({
-        ...prevState,
-        display: true,
-      }))
+      setState((prevState) => (
+        {
+          ...prevState,
+          display: true,
+        }
+      ))
     }, 10)
   }, [])
 

@@ -4,15 +4,16 @@ import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import {Separators} from '@web/components/grids'
 import Box from '@mui/material/Box'
-import {useGatsbyImage} from '@src/hooks'
+import {ScrollingTabs} from '@web/components/content'
+import useHomepageBio from './useHomepageBio'
 
-export default function HomepageIntro() {
+export default function HomepageBio() {
   const theme = useTheme()
 
-  const portrait = useGatsbyImage({
-    src: '/assets/images/sjhomer-portrait.jpg',
-    alt: 'Portrait of SJ Homer',
-  })
+  const {
+    tabs,
+    portrait,
+  } = useHomepageBio()
 
   return (
     <Box className={'homepage-bio'}>
@@ -63,81 +64,24 @@ export default function HomepageIntro() {
             </Grid>
             <Grid
               item xs={12} sx={{
-              mb: 4,
-              display: 'flex',
-              justifyContent: 'space-around',
-              flexWrap: 'wrap',
               i: {
-                flex: '0 0 auto',
+                flex: '0 0 64px',
+                m: `0 22px ${theme.spacing(3)}`,
                 fontSize: 64,
+              },
+              '.homepage-bio-tab-icons': {
+                width: '100%',
+                display: 'inline-flex',
+                flexDirection: 'row',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
               },
             }}
             >
-              Languages
-              <i className="devicon-html5-plain"></i>
-              <i className="devicon-css3-plain"></i>
-              <i className="devicon-sass-plain"></i>
-              <i className="devicon-javascript-plain"></i>
-              <i className="devicon-typescript-plain"></i>
-              <i className="devicon-nodejs-plain"></i>
-              <i className="devicon-php-plain"></i>
-              <i className="devicon-bash-plain"></i>
-              Libraries/Frameworks
-              <i className="devicon-jamstack-plain"></i>
-              <i className="devicon-react-original"></i>
-              <i className="devicon-gatsby-plain"></i>
-              <i className="devicon-redux-original"></i>
-              <i className="devicon-handlebars-plain"></i>
-              <i className="devicon-gulp-plain"></i>
-              VSCs
-              <i className="devicon-bitbucket-plain"></i>
-              <i className="devicon-github-plain"></i>
-              DBs
-              <i className="devicon-graphql-plain"></i>
-              <i className="devicon-mongodb-plain"></i>
-              <i className="devicon-mysql-plain"></i>
-              <i className="devicon-postgresql-plain"></i>
-              IDEs
-              <i className="devicon-phpstorm-plain"></i>
-              <i className="devicon-webstorm-plain"></i>
-              <i className="devicon-atom-plain"></i>
-              <i className="devicon-vscode-plain"></i>
-              CMS
-              <i className="devicon-drupal-plain"></i>
-              <i className="devicon-wordpress-plain"></i>
-              Tooling
-              <i className="devicon-npm-original-wordmark"></i>
-              <i className="devicon-yarn-plaink"></i>
-              <i className="devicon-eslint-plain"></i>
-              <i className="devicon-jest-plain"></i>
-              Hosting/Cloud/Serverless
-              <i className="devicon-docker-plain"></i>
-              <i className="devicon-amazonwebservices-plain"></i>
-              <i className="devicon-firebase-plain"></i>
-              <i className="devicon-digitalocean-plain"></i>
-              <i className="devicon-ssh-plain"></i>
-              Design systems
-              <i className="devicon-materialui-plain"></i>
-              <i className="devicon-bootstrap-plain"></i>
-              <i className="devicon-foundation-plain"></i>
-              Design tools
-              <i className="devicon-figma-plain"></i>
-              <i className="devicon-storybook-plain"></i>
-              <i className="devicon-gimp-plain"></i>
-              Writing/Documentation
-              <i className="devicon-confluence-plain"></i>
-              <i className="devicon-markdown-plain"></i>
-              Project Management
-              <i className="devicon-jira-plain"></i>
-              <i className="devicon-trello-plain"></i>
-              <i className="devicon-slack-plain"></i>
-              OSs
-              <i className="devicon-ubuntu-plain"></i>
-              <i className="devicon-apple-plain"></i>
-              <i className="devicon-windows8-plain"></i>
+              <ScrollingTabs ariaLabel={`List of dev skills`} tabs={tabs} />
             </Grid>
             <Grid item xs={12}>
-              <Typography variant="h5" component="h3" gutterBottom>
+              <Typography variant="h3" component="h3" gutterBottom>
                 Career Journey
               </Typography>
               <Typography variant="body1">
