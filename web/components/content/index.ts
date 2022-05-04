@@ -1,5 +1,5 @@
 import useModal from './Modal/useModal'
-import type {ScrollingTab} from './ScrollingTabs'
-import ScrollingTabs from './ScrollingTabs'
+import type {ScrollingTab} from './Tabs'
+import Tabs from './Tabs'
 
-export {useModal, ScrollingTab, ScrollingTabs}
+export {useModal, ScrollingTab, Tabs}

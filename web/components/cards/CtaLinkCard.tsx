@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
-import {useGatsbyImage} from '@src/hooks'
+import {GatsbyImage} from '../media'
 
 interface CtaLinkCardLink {
   label: string,
@@ -25,7 +25,7 @@ export type CtaLinkCardProps = {
 }
 
 export default function CtaLinkCard({title, description, imageData, links = []}: CtaLinkCardProps) {
-  const image = useGatsbyImage(imageData)
+  const image = <GatsbyImage {...imageData} />
 
   return (
     <Card sx={{maxWidth: 345}} variant="outlined">

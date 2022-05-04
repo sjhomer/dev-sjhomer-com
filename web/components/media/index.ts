@@ -1,4 +1,5 @@
 import Logo from './Logo'
 import DevIcon from './DevIcon'
+import GatsbyImage from './GatsbyImage/GatsbyImage'
 
-export {Logo, DevIcon}
+export {Logo, DevIcon, GatsbyImage}

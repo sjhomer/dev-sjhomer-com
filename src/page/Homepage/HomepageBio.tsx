@@ -4,15 +4,15 @@ import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
 import {Separators} from '@web/components/grids'
 import Box from '@mui/material/Box'
-import {ScrollingTabs} from '@web/components/content'
+import {Tabs} from '@web/components/content'
 import useHomepageBio from './useHomepageBio'
+import {GatsbyImage} from '@web/components/media'
 
 export default function HomepageBio() {
   const theme = useTheme()
 
   const {
     tabs,
-    portrait,
   } = useHomepageBio()
 
   return (
@@ -35,7 +35,12 @@ export default function HomepageBio() {
             md: 8,
           }}
           >
-            <Grid item xs={12} md={6}>
+            <Grid
+              item xs={12} md={6} order={{
+              xs: 2,
+              md: 1,
+            }}
+            >
               <Typography variant="h5" component="div" gutterBottom>
                 {`Hi, I’m Homer. Being in Web Development for almost two decades, I’ve specialized in Frontend for over half my career, and transitioned into leading teams for the past four years.`}
               </Typography>
@@ -52,33 +57,57 @@ export default function HomepageBio() {
                 {`I’ve seen how freeing and flexible tools like this allow for radical approaches to consuming data and produce solutions in new and exciting ways. With my out of the box approach to data architecting, I help guide teams to get the most out of what these systems can do.`}
               </Typography>
             </Grid>
-            <Grid item xs={12} md={6} alignSelf={'center'}>
-              {portrait}
+            <Grid
+              item xs={12} md={6} alignSelf={'center'} order={{
+              xs: 1,
+              md: 2,
+            }}
+            >
+              <GatsbyImage src={'/assets/images/sjhomer-portrait.jpg'} alt={'Portrait of SJ Homer'} />
             </Grid>
           </Grid>
           <Grid container>
-            <Grid item xs={12}>
-              <Typography variant="h5" component="h3" gutterBottom>
-                Key Development Skills
-              </Typography>
+            <Grid item xs={12} md={6}>
+              <GatsbyImage src={'/assets/images/bio-code-view.png'} alt={'Portrait of SJ Homer'} />
             </Grid>
             <Grid
-              item xs={12} sx={{
-              i: {
-                flex: '0 0 64px',
-                m: `0 22px ${theme.spacing(3)}`,
-                fontSize: 64,
-              },
-              '.homepage-bio-tab-icons': {
-                width: '100%',
-                display: 'inline-flex',
-                flexDirection: 'row',
-                flexWrap: 'wrap',
-                justifyContent: 'center',
-              },
-            }}
+              item xs={12} md={6}
+              sx={{
+                '.scrolling-tabs': {
+                  m: '0 auto',
+                },
+                i: {
+                  flex: '0 0 64px',
+                  my: 1,
+                  mx: 3,
+                  fontSize: 64,
+                },
+                '.MuiTabPanel-root': {
+                  alignSelf: 'center',
+                  p: 1,
+                },
+                '.homepage-bio-tab-icons': {
+                  width: '100%',
+                  display: 'inline-flex',
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  maxWidth: {
+                    md: 224,
+                  },
+                },
+              }}
             >
-              <ScrollingTabs ariaLabel={`List of dev skills`} tabs={tabs} />
+              <Typography variant="h5" component="h3" textAlign={'center'} gutterBottom>
+                Key Technical Skills
+              </Typography>
+              <Tabs
+                tabs={tabs}
+                ariaLabel={`List of dev skills`}
+                orientation={'vertical'}
+                sx={{borderRight: 1, borderColor: 'divider'}}
+              />
             </Grid>
             <Grid item xs={12}>
               <Typography variant="h3" component="h3" gutterBottom>

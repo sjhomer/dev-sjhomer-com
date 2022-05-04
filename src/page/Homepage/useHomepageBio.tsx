@@ -1,21 +1,14 @@
 import * as React from 'react'
 import {useTheme} from '@mui/material/styles'
-import {useGatsbyImage} from '@src/hooks'
 import {ScrollingTab} from '@web/components/content'
 import {DevIcon} from '@web/components/media'
 
 interface useHomepageBioReturn {
-  portrait: JSX.Element | null
   tabs: ScrollingTab[]
 }
 
 export default function useHomepageBio(): useHomepageBioReturn {
   const theme = useTheme()
-
-  const portrait = useGatsbyImage({
-    src: '/assets/images/sjhomer-portrait.jpg',
-    alt: 'Portrait of SJ Homer',
-  })
 
   const tabs = [
     {
@@ -117,6 +110,5 @@ export default function useHomepageBio(): useHomepageBioReturn {
 
   return {
     tabs,
-    portrait,
   }
 }
