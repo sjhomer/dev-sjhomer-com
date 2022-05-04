@@ -23,13 +23,15 @@ export default function HomepageEntryJob() {
   return (
     <>
       <Box
-        data-sal="slide-up"
-        data-sal-duration="1000" //// changes duration of the animation (from 200 to 2000 ms)
-        data-sal-delay="10" // adds delay to the animation (from 5 to 1000 ms)
-        data-sal-easing="easeOut" // sets easing for the animation (see easings.net for reference)
+        // data-sal="slide-up"
+        // data-sal-duration="1000" //// changes duration of the animation (from 200 to 2000 ms)
+        // data-sal-delay="10" // adds delay to the animation (from 5 to 1000 ms)
+        // data-sal-easing="easeOut" // sets easing for the animation (see easings.net for reference)
         sx={{
           my: 4,
           textAlign: 'justify',
+          mx: 'auto',
+          maxWidth: '80%',
         }}
       >
         <Typography variant="h4" component="h3" gutterBottom>

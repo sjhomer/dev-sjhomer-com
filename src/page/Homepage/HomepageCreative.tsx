@@ -91,6 +91,16 @@ export default function HomepageCreative() {
         <Grid item xs={0} md={2} />
       </Grid>
       {modals}
+      <Grid container>
+        <Grid
+          className={'homepage-intro__separator'} item xs={12} sx={{
+          pt: '4rem !important',
+          mb: 2,
+        }}
+        >
+          <Separators.SchoolSeparator />
+        </Grid>
+      </Grid>
     </Box>
   )
 }

@@ -62,10 +62,10 @@ export default function HomepageBio() {
                 variant="subtitle1"
                 gutterBottom
                 marginTop={2}
-                dangerouslySetInnerHTML={{__html: `<strong>Over the past six years</strong>, I have been fully remote, working with distributed teams across Canada, Europe, and India. 🌎 It has been a privilege to work with such a diverse group on many client projects, both large and small across many industries, leveraging a wide range of technologies.`}}
+                dangerouslySetInnerHTML={{__html: `<strong>Over the past six years</strong>, I have been fully remote, working with distributed teams across the Americas, Europe, and India. 🌎 It has been a privilege to work with such a diverse group on many client projects, both large and small across many industries, leveraging a wide range of technologies.`}}
               />
               <Typography variant="body1" gutterBottom>
-                {`While I've mastered JS, the Web never sleeps; if you blink, you might miss the mark and be playing catch up. Thankfully, I was fortunate enough to be immersed in the rising tide of Jamstack (even before it was called such), and having recently led the builds of three enterprise sites, and an application, with Gatsby.`}
+                {`While I've mastered JS, the Web never sleeps; if you blink, you might miss the mark and be playing catch up. Thankfully, I was fortunate enough to be immersed in the rising tide of Jamstack (even before it was called such), and grateful to of led the builds on three enterprise sites, and an application, with Gatsby.`}
               </Typography>
               <Typography variant="body1" gutterBottom>
                 {`I’ve seen how freeing and flexible tools like this allow for radical approaches to consuming data and produce solutions in new and exciting ways. With my out of the box approach to data architecting, I help guide teams to get the most out of what these systems can do.`}
