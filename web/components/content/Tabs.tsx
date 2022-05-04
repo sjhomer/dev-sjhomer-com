@@ -25,23 +25,16 @@ export default function Tabs({ariaLabel, tabs, ...tabsProps}: TabsProps) {
   return (
     <TabContext value={value}>
       <Box
-        className={'scrolling-tabs'}
-        sx={{backgroundColor: 'background.paper', display: 'flex'}}
+        className={'tabs'}
+        sx={{backgroundColor: 'background.paper', display: 'flex', justifyContent: 'center'}}
       >
-        <MuiTabs
-          {...tabsProps}
-          onChange={handleChange}
-          aria-label={ariaLabel}
-
-        >
+        <MuiTabs {...tabsProps} onChange={handleChange} aria-label={ariaLabel}>
           {tabs.map(({label}, index) => (
             <Tab key={`tab-${encodeURI(label)}`} label={label} value={index.toString()} />
           ))}
         </MuiTabs>
         {tabs.map(({label, content}, index) => (
-          <TabPanel
-            key={`tab-panel-${encodeURI(label)}`} value={index.toString()} tabIndex={index}
-          >
+          <TabPanel key={`tab-panel-${encodeURI(label)}`} value={index.toString()} tabIndex={index}>
             {content}
           </TabPanel>
         ))}

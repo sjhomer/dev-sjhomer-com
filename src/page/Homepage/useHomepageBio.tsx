@@ -28,7 +28,7 @@ export default function useHomepageBio(): useHomepageBioReturn {
     },
 
     {
-      label: 'Libraries/Tooling',
+      label: 'Libraries / Tooling',
       content: (
         <div className={'homepage-bio-tab-icons'}>
           <DevIcon type={'react'} />
@@ -43,7 +43,7 @@ export default function useHomepageBio(): useHomepageBioReturn {
       ),
     },
     {
-      label: 'CMSs/Databases',
+      label: 'CMSs /  Databases',
       content: (
         <div className={'homepage-bio-tab-icons'}>
           <DevIcon type={'drupal'} />
@@ -70,7 +70,7 @@ export default function useHomepageBio(): useHomepageBioReturn {
       ),
     },
     {
-      label: 'Cloud/Serverless',
+      label: 'Cloud / Serverless',
       content: (
         <div className={'homepage-bio-tab-icons'}>
           <DevIcon type={'jamstack'} />
@@ -82,7 +82,7 @@ export default function useHomepageBio(): useHomepageBioReturn {
       ),
     },
     {
-      label: 'Design systems/Tools',
+      label: 'Design Systems / Tools',
       content: (
         <div className={'homepage-bio-tab-icons'}>
           <DevIcon type={'materialui'} />

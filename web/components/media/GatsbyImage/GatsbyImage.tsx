@@ -6,9 +6,11 @@ export interface ImageProps {
   src: string,
   layout?: Layout,
   alt: string,
+  width?: number;
+  height?: number;
 }
 
-export default function GatsbyImage({src, layout, alt}: ImageProps) {
+export default function GatsbyImage({src, layout, alt, ...imageProps}: ImageProps) {
   const image = useImageData(src, layout)
-  return src ? <GImage image={image} alt={alt} /> : null
+  return src ? <GImage {...imageProps} image={image} alt={alt} /> : null
 }

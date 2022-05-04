@@ -2,6 +2,7 @@ import * as React from 'react'
 import Typography from '@mui/material/Typography'
 import Box from '@mui/material/Box'
 import {Separators} from '@web/components/grids'
+import Grid from '@mui/material/Grid'
 
 export default function HomepageCollege() {
   return (
@@ -16,6 +17,26 @@ export default function HomepageCollege() {
           textAlign: 'justify',
         }}
       >
+        <Grid container>
+          <Grid
+            className={'homepage-intro__separator'} item xs={12} sx={{
+            pt: '3rem !important',
+            mb: 5,
+          }}
+          >
+            <Separators.SchoolSeparator />
+          </Grid>
+        </Grid>
+        <Grid container sx={{mb: 5}}>
+          <Grid item xs={12}>
+            <Typography variant="h3" component="h2" gutterBottom>
+              Career Journey
+            </Typography>
+            <Typography variant="body1">
+              {`Before getting ahead of where I am in my career today, how one has grown to where they are is just as important as what they’ve achieved. The challenges and struggles that I’ve overcome show why rising to the occasion and pushing beyond have kept me moving always upwards in my journey through development.`}
+            </Typography>
+          </Grid>
+        </Grid>
         <Typography variant="h4" component="h2" gutterBottom>
           How Post-secondary Changed Me
         </Typography>

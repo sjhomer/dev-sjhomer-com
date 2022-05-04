@@ -7,6 +7,7 @@ import HomepageSeniorJob from './HomepageSeniorJob'
 import HomepageWrapup from './HomepageWrapup'
 import HomepageCreative from './HomepageCreative'
 import HomepageBio from './HomepageBio'
+import HomepagePortfolio from './HomepagePortfolio'
 
 export {
   HomepageTimeline,
@@ -18,4 +19,5 @@ export {
   HomepageWrapup,
   HomepageCreative,
   HomepageBio,
+  HomepagePortfolio,
 }

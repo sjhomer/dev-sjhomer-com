@@ -7,16 +7,30 @@ import Box from '@mui/material/Box'
 import {Tabs} from '@web/components/content'
 import useHomepageBio from './useHomepageBio'
 import {GatsbyImage} from '@web/components/media'
+import useMediaQuery from '@mui/material/useMediaQuery'
 
 export default function HomepageBio() {
   const theme = useTheme()
+  // Because you can't conditionally render hooks, obtain booleans and check OR after.
+  const [screenSize1, screenSize2] = [
+    useMediaQuery('(min-width:900px) and (max-width:1010px)'),
+    useMediaQuery('(max-width:511px)'),
+  ]
+  const transientGridSize = screenSize1 || screenSize2
 
   const {
     tabs,
   } = useHomepageBio()
 
   return (
-    <Box className={'homepage-bio'}>
+    <Box
+      className={'homepage-bio'} sx={{
+      '.gatsby-image-wrapper': {
+        width: 544,
+        maxWidth: '100%',
+      },
+    }}
+    >
       <Grid
         container sx={{
         mb: 4,
@@ -58,7 +72,7 @@ export default function HomepageBio() {
               </Typography>
             </Grid>
             <Grid
-              item xs={12} md={6} alignSelf={'center'} order={{
+              item xs={12} md={6} alignSelf={'center'} textAlign={'center'} order={{
               xs: 1,
               md: 2,
             }}
@@ -66,8 +80,13 @@ export default function HomepageBio() {
               <GatsbyImage src={'/assets/images/sjhomer-portrait.jpg'} alt={'Portrait of SJ Homer'} />
             </Grid>
           </Grid>
-          <Grid container>
-            <Grid item xs={12} md={6}>
+          <Grid
+            container spacing={{
+            xs: 3,
+            md: 8,
+          }}
+          >
+            <Grid item xs={12} md={6} alignSelf={'center'} textAlign={'center'}>
               <GatsbyImage src={'/assets/images/bio-code-view.png'} alt={'Portrait of SJ Homer'} />
             </Grid>
             <Grid
@@ -76,7 +95,12 @@ export default function HomepageBio() {
                 '.scrolling-tabs': {
                   m: '0 auto',
                 },
-                i: {
+                i: transientGridSize ? {
+                  flex: '0 0 48px',
+                  my: 1,
+                  mx: 1.5,
+                  fontSize: 48,
+                } : {
                   flex: '0 0 64px',
                   my: 1,
                   mx: 3,
@@ -93,9 +117,7 @@ export default function HomepageBio() {
                   flexWrap: 'wrap',
                   justifyContent: 'center',
                   alignItems: 'center',
-                  maxWidth: {
-                    md: 224,
-                  },
+                  maxWidth: 224,
                 },
               }}
             >
@@ -106,16 +128,18 @@ export default function HomepageBio() {
                 tabs={tabs}
                 ariaLabel={`List of dev skills`}
                 orientation={'vertical'}
-                sx={{borderRight: 1, borderColor: 'divider'}}
+                sx={{
+                  borderRight: 1,
+                  borderColor: 'divider',
+                  width: {
+                    xs: 240,
+                    md: 'auto',
+                  },
+                  '.MuiTab-root': {
+                    textTransform: 'none',
+                  },
+                }}
               />
-            </Grid>
-            <Grid item xs={12}>
-              <Typography variant="h3" component="h3" gutterBottom>
-                Career Journey
-              </Typography>
-              <Typography variant="body1">
-                {`Before getting ahead of where I am in my career today, how one has grown to where they are is just as important as what they’ve achieved. The challenges and struggles that I’ve overcome show why rising to the occasion and pushing beyond have kept me moving always upwards in my journey through development.`}
-              </Typography>
             </Grid>
           </Grid>
         </Grid>

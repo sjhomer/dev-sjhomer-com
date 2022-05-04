@@ -8,6 +8,8 @@ import SportsScoreTwoToneIcon from '@mui/icons-material/SportsScoreTwoTone'
 import FilterHdrTwoToneIcon from '@mui/icons-material/FilterHdrTwoTone'
 import HikingTwoToneIcon from '@mui/icons-material/HikingTwoTone'
 import {Audiotrack, Portrait} from '@mui/icons-material'
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
+import SchoolIcon from '@mui/icons-material/School'
 
 export const ArrowSeparator = (props) => {
   return (
@@ -24,6 +26,18 @@ export const AudioSeparator = (props) => {
 export const PortraitSeparator = (props) => {
   return (
     <Divider {...props}><Portrait /></Divider>
+  )
+}
+
+export const AwardSeparator = (props) => {
+  return (
+    <Divider {...props}><EmojiEventsIcon /></Divider>
+  )
+}
+
+export const SchoolSeparator = (props) => {
+  return (
+    <Divider {...props}><SchoolIcon /></Divider>
   )
 }
 

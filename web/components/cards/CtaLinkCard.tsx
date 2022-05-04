@@ -18,17 +18,17 @@ export type CtaLinkCardProps = {
   title?: string,
   description?: string,
   links?: CtaLinkCardLink[],
-  imageData: {
+  imageData?: {
     src: string,
     alt: string,
   }
 }
 
 export default function CtaLinkCard({title, description, imageData, links = []}: CtaLinkCardProps) {
-  const image = <GatsbyImage {...imageData} />
+  const image = imageData ? <GatsbyImage {...imageData} /> : null
 
   return (
-    <Card sx={{maxWidth: 345}} variant="outlined">
+    <Card className={'cta-link-card'} variant="outlined">
       {image && <CardMedia>
         {image}
       </CardMedia>}

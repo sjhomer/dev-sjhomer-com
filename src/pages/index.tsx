@@ -14,6 +14,7 @@ export default function IndexPage({data, location}: PageProps) {
         {/*<AudioPlayer src={'/assets/audio/teaser.mp3'} title={'Listen to this page'}/>*/}
         <Homepage.HomepageIntro />
         <Homepage.HomepageBio />
+        <Homepage.HomepagePortfolio />
         <Homepage.HomepageCreative />
         <Homepage.HomepageCollege />
         <Homepage.HomepageEntryJob />

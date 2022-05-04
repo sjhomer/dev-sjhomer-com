@@ -32,7 +32,7 @@ export default function HomepageEntryJob() {
           textAlign: 'justify',
         }}
       >
-        <Typography variant="h4" component="h2" gutterBottom>
+        <Typography variant="h4" component="h3" gutterBottom>
           Learning the Ropes
         </Typography>
         <Grid container marginBottom={2} spacing={{xs: 1, md: 8}}>
@@ -45,7 +45,7 @@ export default function HomepageEntryJob() {
             <List items={techAndSkill} />
           </Grid>
         </Grid>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h4" gutterBottom>
           Putting some Notches on the Training Belt
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -57,7 +57,7 @@ export default function HomepageEntryJob() {
         <Typography variant="body1" gutterBottom>
           {`Parallel to these efforts, as I advanced in my role, I had the opportunity as well to support some Windows Application development in ASP.Net, helping to build a modern installer suite.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h4" gutterBottom>
           Changing things up
         </Typography>
         <Typography variant="body1" gutterBottom>

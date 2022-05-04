@@ -5,11 +5,11 @@ import Grid from '@mui/material/Grid'
 import {Separators} from '@web/components/grids'
 import {CtaLinkCard} from '@web/components/cards'
 import Box from '@mui/material/Box'
-import useHomepageCreative from './useHomepageCreative'
+import useHomepagePortfolio from './useHomepagePortfolio'
 
-export default function HomepageCreative() {
+export default function HomepagePortfolio() {
   const theme = useTheme()
-  const {ctas, modals} = useHomepageCreative()
+  const {ctas, modals} = useHomepagePortfolio()
 
   return (
     <Box className={'homepage-creative'}>
@@ -20,7 +20,7 @@ export default function HomepageCreative() {
           mb: 5,
         }}
         >
-          <Separators.AudioSeparator />
+          <Separators.AwardSeparator />
         </Grid>
       </Grid>
       <Grid
@@ -39,11 +39,11 @@ export default function HomepageCreative() {
             mb: 2,
           }}
           >
-            {`Creative Projects outside of Development`}
+            {`Recent Projects`}
           </Typography>
           <Typography
             variant="body1" sx={{
-            // textAlign: 'center',
+            textAlign: 'center',
             pt: 1,
             pb: {
               xs: 3,
@@ -54,7 +54,7 @@ export default function HomepageCreative() {
             width: 675,
           }}
           >
-            {`Every team member I’ve encountered has many passions away from development, and I’m no exception. Writing, music, singing, voice acting, to name a few, and through these, sometimes magic happens and creative projects are born. Check out some of my recent successes below.`}
+            {`Case studies on recent projects which I led and or contributed too.`}
           </Typography>
         </Grid>
       </Grid>
@@ -68,27 +68,22 @@ export default function HomepageCreative() {
         },
       }}
       >
-        <Grid item xs={0} md={2} />
         <Grid
-          item xs={12} md={8} sx={{
+          item xs={12} sx={{
           pt: {
-            xs: '0 !important',
+            // xs: '0 !important',
             md: `${theme.spacing(8)} !important`,
-          },
-          '.cta-link-card': {
-            maxWidth: 336,
           },
         }}
         >
-          <Grid container spacing={8}>
+          <Grid container spacing={4}>
             {ctas.map((cta) => (
-              <Grid item xs={12} md={6} key={encodeURI(cta.title as string)}>
+              <Grid item xs={12} sm={6} lg={4} key={encodeURI(cta.title as string)}>
                 <CtaLinkCard  {...cta} />
               </Grid>
             ))}
           </Grid>
         </Grid>
-        <Grid item xs={0} md={2} />
       </Grid>
       {modals}
     </Box>
