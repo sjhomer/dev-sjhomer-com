@@ -15,7 +15,7 @@ export default function HomepageIntermediateJob() {
     },
     {
       label: 'Skills & Services',
-      caption: 'GoDaddy, Linode, DigitalOcean, DNS Management, Google Analytics, Git',
+      caption: 'Project Management, UX, Technical Architecture, Mentorship, Development Lead, DevOps, GoDaddy, Linode, DigitalOcean, DNS Management, Google Analytics, Git Management',
       icon: <MilitaryTechTwoToneIcon />,
     },
   ]
@@ -31,7 +31,9 @@ export default function HomepageIntermediateJob() {
           my: 4,
           textAlign: 'justify',
           mx: 'auto',
-          maxWidth: '80%',
+          maxWidth: {
+            md: '80%',
+          },
         }}
       >
         <Typography variant="h4" component="h2" gutterBottom>
@@ -47,7 +49,7 @@ export default function HomepageIntermediateJob() {
             <List items={techAndSkill} />
           </Grid>
         </Grid>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           Why “done done” matters for UAT
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -56,7 +58,7 @@ export default function HomepageIntermediateJob() {
         <Typography variant="body1" gutterBottom>
           {`I resolved to do my due diligence, validating requirements are clear before beginning, or pausing to gain clarity if blockers present themselves, finally triple check releases even when you think “things are good” to give clients the best possible results at all times. Least to say, while this specific client was immensely unhappy initially, they became quite fond of me. Through my dedication in supporting their services for my entire tenure at the firm, they were dearly saddened to see me move on.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           Laying brick after brick
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -71,7 +73,7 @@ export default function HomepageIntermediateJob() {
         <Typography variant="body1" gutterBottom>
           {`During my growth, I led projects and supported other developers through code reviews, began supporting the RPF process, defining estimations on projects/bids to quantify the efforts, and generating tasks needed to execute our solutions successfully.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           Looking to the Future
         </Typography>
         <Typography variant="body1" gutterBottom>

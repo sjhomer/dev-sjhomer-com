@@ -16,12 +16,14 @@ export default function HomepageCollege() {
           my: 4,
           textAlign: 'justify',
           mx: 'auto',
-          maxWidth: '80%',
+          maxWidth: {
+            md: '80%',
+          },
         }}
       >
         <Grid container sx={{mb: 5}}>
           <Grid item xs={12}>
-            <Typography variant="h3" component="h2" gutterBottom>
+            <Typography variant="h3" component="h2" textAlign={'left'} gutterBottom>
               Career Journey
             </Typography>
             <Typography variant="body1">
@@ -29,13 +31,13 @@ export default function HomepageCollege() {
             </Typography>
           </Grid>
         </Grid>
-        <Typography variant="h4" component="h2" gutterBottom>
+        <Typography variant="h4" component="h2" textAlign={'left'} gutterBottom>
           How Post-secondary Changed Me
         </Typography>
         <Typography variant="body1" gutterBottom>
           {`My time at college was a rewarding experience as it helped prepare me for my future as a self-driven learner, and respecting the consequences of failure.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           What you’re not Taught, is the Lesson
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -44,7 +46,7 @@ export default function HomepageCollege() {
         <Typography variant="body1" gutterBottom>
           {`I began to realize that in the real world, no one is ever going to force you to learn what you knew you needed to know. You just have to teach yourself. That might seem cynical, but it’s quite the opposite, actually. I decided learning PHP was going to help place me in the field, so I took what teachings I could from my courses and apply it to the new tools myself. By the time I’d finished post-secondary, PHP had yet to be included in any of the course offerings. Yet, I had already built my graduation project in it, had a decent competency of it, and this helped me excel in the workplace.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           A Pivotal Lesson in Failure
         </Typography>
         <Typography variant="body1" gutterBottom>

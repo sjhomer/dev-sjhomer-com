@@ -26,22 +26,29 @@ export default function Layout(props: LayoutProps) {
   }
 
   return (
-    <Box className="layout" data-is-root-path={isRootPath} sx={{
+    <Box
+      className="layout" data-is-root-path={isRootPath} sx={{
       mb: {
         xs: theme.spacing(15),
         sm: theme.spacing(20),
-        md: theme.spacing(25)
+        md: theme.spacing(25),
       },
       pt: theme.spacing(5),
-    }}>
-      <Head {...headProps}/>
+      mx: 'auto',
+      maxWidth: {
+        xs: '90vw',
+        md: '100%',
+      },
+    }}
+    >
+      <Head {...headProps} />
       {/*<Header/>*/}
       <main>
         <Container maxWidth="lg">
           {children}
         </Container>
       </main>
-      <Footer/>
+      <Footer />
     </Box>
   )
 }

@@ -31,10 +31,12 @@ export default function HomepageEntryJob() {
           my: 4,
           textAlign: 'justify',
           mx: 'auto',
-          maxWidth: '80%',
+          maxWidth: {
+            md: '80%',
+          },
         }}
       >
-        <Typography variant="h4" component="h3" gutterBottom>
+        <Typography variant="h4" component="h3" textAlign={'left'} gutterBottom>
           Learning the Ropes
         </Typography>
         <Grid container marginBottom={2} spacing={{xs: 1, md: 8}}>

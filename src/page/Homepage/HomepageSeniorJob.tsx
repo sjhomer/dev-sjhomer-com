@@ -15,7 +15,7 @@ export default function HomepageSeniorJob() {
     },
     {
       label: 'Skills & Services',
-      caption: 'Agile Project Management, Technical Architecture, Mentorship, Pantheon, Platform.sh, Netlify, ASW Amplify, Jenkins, Bitbucket w/Pipelines, Github w/Actions',
+      caption: 'Agile Project Management, Product Strategy, UX, Technical Strategy, Technical Architecture, Mentorship, Development Lead, DevOps, Pantheon, Platform.sh, Gatsby Cloud, Netlify, ASW Amplify, Jenkins, Bitbucket w/Pipelines, Github w/Actions',
       icon: <MilitaryTechTwoToneIcon />,
     },
   ]
@@ -31,10 +31,12 @@ export default function HomepageSeniorJob() {
           my: 4,
           textAlign: 'justify',
           mx: 'auto',
-          maxWidth: '80%',
+          maxWidth: {
+            md: '80%',
+          },
         }}
       >
-        <Typography variant="h4" component="h2" gutterBottom>
+        <Typography variant="h4" component="h2" textAlign={'left'} gutterBottom>
           Honing my Craft and Leading
         </Typography>
         <Grid container marginBottom={2} spacing={{xs: 1, md: 8}}>
@@ -47,7 +49,7 @@ export default function HomepageSeniorJob() {
             <List items={techAndSkill} />
           </Grid>
         </Grid>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           Node, the Crazy but Fun Wild West
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -65,7 +67,7 @@ export default function HomepageSeniorJob() {
         <Typography variant="body1" gutterBottom>
           {`CoffeeScript, well, that was a wild ride for sure! With its harsh opinionated syntax enforced, coupled with the complicated templating of DocPad, but hey at least we have arrow functions in JS now. We leveraged NodeJs to connect to Drupal, which fed data to DocPad and, through the data architecture, would dynamically generate components. Like the decoupled solution prior, we were doing headless CMS here before it was common practice. This too was before “componentize all the things” became the norm, so, it took some real magic to get the stars to align around these technologies. And just like modern static site builders, unsurprisingly build times and hiccups needed to be surpassed, finding a reasonably happy path. T sites could generate and build their specific content and themes, while shared components and assets across the sub-brands allowed for a more maintainable solution.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           Durpalizing the Componentizing
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -74,7 +76,7 @@ export default function HomepageSeniorJob() {
         <Typography variant="body1" gutterBottom>
           {`As things progressed with later projects, I moved into the more traditional Drupal theming space, and pushed the boundaries into what it could do in the vein of componentization. Studying designs and similarities from pages to page, I recognized if things were just data, many UI elements are just the same component with unique styling or variations. It wasn’t too long before I helped define and build, with a talented partner, an internal component system for Drupal. It’s stood the test of time as its still being using successfully. Based on PatternLab and Atomic Design, it was born from Main Spring and an earlier iteration of Emulsify. We put own spin and standards to streamline what worked best for our team, added tooling, and a micro JS framework to pair component behaviours alongside Drupal.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           Stepping up to the TA Plate
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -83,7 +85,7 @@ export default function HomepageSeniorJob() {
         <Typography variant="body1" gutterBottom>
           {`From this, I became involved once more in project planning and estimations from the RFP stage, albeit at a higher level than at my former firm. It was now my responsibility to formulate to the best of my ability with that research and known variables options and an ideal approach for solutions. At a high level, I had to know the scope of all the technical aspects and risks to help flesh out those elements for the bid. Advancing to this role, I became more prominent with clients. Helping deliver and clarify the technical proposals, I had to instil confidence in our understanding of their problems we’d planned to solve.`}
         </Typography>
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           The Shifting Frontend Landscape
         </Typography>
         <Typography variant="body1" gutterBottom>
@@ -102,7 +104,7 @@ export default function HomepageSeniorJob() {
           {`With a new and shine static site generator tool like Gatsby, old became new again, with reinvigorated the essence of why static sites were a critical concept that needed a comeback. Our first enterprise Gatsby site launched just before the pandemic, and proved the right choice. While our client’s competitors sites got hammered and run down from SSR traffic, out right breaking some of their services, our clients site was online and running without a blip. That’s the beauty of these solutions with having at most degradation of only isolated services when you build smartly in Jamstack. It gives end users a peace of mind while doing most of their needed operations nearly always.`}
         </Typography>
 
-        <Typography variant="h5" component="h3" gutterBottom>
+        <Typography variant="h5" component="h3" textAlign={'left'} gutterBottom>
           Leading a Team Successfully
         </Typography>
         <Typography variant="body1" gutterBottom>

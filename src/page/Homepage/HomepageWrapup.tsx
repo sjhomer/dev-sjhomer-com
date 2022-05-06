@@ -14,10 +14,12 @@ export default function HomepageWrapup() {
           my: 4,
           textAlign: 'justify',
           mx: 'auto',
-          maxWidth: '80%',
+          maxWidth: {
+            md: '80%',
+          },
         }}
       >
-        <Typography variant="h4" component="h2" gutterBottom>
+        <Typography variant="h4" component="h2" textAlign={'left'} gutterBottom>
           That’s a wrap, for now.
         </Typography>
         <Typography variant="body1" gutterBottom>
