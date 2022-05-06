@@ -10,12 +10,12 @@ export default function HomepageSeniorJob() {
   let techAndSkill = [
     {
       label: 'Tech',
-      caption: 'JS, CoffeeScript, NodeJs, MongoDB, Drupal, PHP, Sass, Material UI, React, Gatsby, Shell Scripting/CLIs',
+      caption: 'JS, CoffeeScript, NodeJs, MongoDB, Drupal, PHP, Twig, Sass, Material UI, React, Gatsby, Shell Scripting/CLIs',
       icon: <ImportantDevicesTwoToneIcon />,
     },
     {
       label: 'Skills & Services',
-      caption: 'Agile Project Management, Pantheon, Platform.sh, Netlify, ASW Amplify, Jenkins, Bitbucket w/Pipelines, Github w/Actions',
+      caption: 'Agile Project Management, Technical Architecture, Mentorship, Pantheon, Platform.sh, Netlify, ASW Amplify, Jenkins, Bitbucket w/Pipelines, Github w/Actions',
       icon: <MilitaryTechTwoToneIcon />,
     },
   ]
@@ -40,7 +40,7 @@ export default function HomepageSeniorJob() {
         <Grid container marginBottom={2} spacing={{xs: 1, md: 8}}>
           <Grid item xs={12} md={6}>
             <Typography variant="body1" gutterBottom>
-              {`In my recent firm of over 7 years, I solidified my skills in Frontend and the shifting JS ecosystem, cozied up with Agile project management, and elevated into the Frontend Lead.`}
+              {`In my recent firm of over 7 years, I solidified my skills in Frontend and the shifting JS ecosystem, cozied up with Agile project management, and elevated into the Frontend Lead. From my nature to learn from mistakes, it’s helped me grow into a position where I’m adamantly committed to elevating and protecting my development team, so they can always strive to give their best.`}
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>

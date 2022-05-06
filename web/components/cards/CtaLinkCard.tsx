@@ -7,7 +7,7 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import {GatsbyImage} from '../media'
 
-interface CtaLinkCardLink {
+export interface CtaLinkCardLink {
   label: string,
   href?: string,
 
@@ -16,7 +16,7 @@ interface CtaLinkCardLink {
 
 export type CtaLinkCardProps = {
   title?: string,
-  description?: string,
+  description?: string | JSX.Element,
   links?: CtaLinkCardLink[],
   imageData?: {
     src: string,
@@ -49,6 +49,7 @@ export default function CtaLinkCard({title, description, imageData, links = []}:
             href={link.href}
             onClick={link.onClick}
             target="_blank"
+            disabled={!link.href && !link.onClick}
           >{link.label}
           </Button>)}
       </CardActions>}

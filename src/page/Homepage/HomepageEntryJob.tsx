@@ -7,7 +7,7 @@ import ImportantDevicesTwoToneIcon from '@mui/icons-material/ImportantDevicesTwo
 import MilitaryTechTwoToneIcon from '@mui/icons-material/MilitaryTechTwoTone'
 
 export default function HomepageEntryJob() {
-  let techAndSkill = [
+  const techAndSkill = [
     {
       label: 'Tech',
       caption: 'PHP, MySQL, ERP, JS, ASP, ASP.Net, Magento',

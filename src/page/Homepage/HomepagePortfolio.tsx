@@ -76,9 +76,9 @@ export default function HomepagePortfolio() {
           },
         }}
         >
-          <Grid container spacing={4}>
+          <Grid container spacing={4} justifyContent={'center'}>
             {ctas.map((cta) => (
-              <Grid item xs={12} sm={6} lg={4} key={encodeURI(cta.title as string)}>
+              <Grid item xs={12} sm={6} key={encodeURI(cta.title as string)}>
                 <CtaLinkCard  {...cta} />
               </Grid>
             ))}
