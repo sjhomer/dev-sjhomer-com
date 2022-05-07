@@ -54,7 +54,7 @@ export default function HomepagePortfolio() {
             width: 675,
           }}
           >
-            {`Case studies on recent projects which I led and or contributed too.`}
+            {`Case studies on recent projects which I led and contributed too.`}
           </Typography>
         </Grid>
       </Grid>

@@ -53,10 +53,10 @@ export default function HomepageEntryJob() {
           Putting some Notches on the Training Belt
         </Typography>
         <Typography variant="body1" gutterBottom>
-          {`Eager to learn and start leveraging my tapping into development skills, they onboarded me to aid in developing a back office ERP system with PHP/MySQL. It gave me the opportunity to learn the ins and outs of inventory management and supply chain.`}
+          {`Eager to learn and start leveraging by tapping into development skills, they onboarded me to aid in developing a back office ERP system with PHP/MySQL. It gave me the opportunity to learn the ins and outs of inventory management and supply chain.`}
         </Typography>
         <Typography variant="body1" gutterBottom>
-          {`There they came the opportunity to step into my first official Frontend development role in managing the company’s main website, marketing campaigns, emailers, and even some light ecommerce, all using ASP, and no, not the .Net framework, and even some Flash. Wild and crazy times when you’ve been in the field as long as I have. These were still valuable and prominent tools, and learning to develop good coding standards is never wasted.`}
+          {`Then came the opportunity to step into my first official Frontend development role in managing the company’s main website, marketing campaigns, emailers, and even some light ecommerce. All using ASP, and no, not the .Net framework, and even some Flash! Wild and crazy times when you’ve been in the field as long as I have. These were still valuable and prominent tools, and learning to develop good coding standards is never a waste.`}
         </Typography>
         <Typography variant="body1" gutterBottom>
           {`Parallel to these efforts, as I advanced in my role, I had the opportunity as well to support some Windows Application development in ASP.Net, helping to build a modern installer suite.`}
@@ -65,7 +65,7 @@ export default function HomepageEntryJob() {
           Changing things up
         </Typography>
         <Typography variant="body1" gutterBottom>
-          {`The websites served their needs until through a merger with a parent company; we shifted gears and transition into the Magento framework, and I could move back into PHP development.`}
+          {`The websites served their needs until through a merger with a parent company; we shifted gears and transitioned into the Magento framework, where I could move back into PHP development.`}
         </Typography>
         <Typography variant="body1" gutterBottom>
           {`As mergers can go, however, not everything lands well for the smaller fish some times. As differences and struggles arose, preventing me from doing my best work, I sensed the need for a change. A door into a web agency opened up, and I continued my journey onward.`}

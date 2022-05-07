@@ -48,7 +48,7 @@ export default function HomepageIntro() {
                 variant="subtitle1"
                 gutterBottom
                 marginTop={2}
-                dangerouslySetInnerHTML={{__html: `Now, JS/TS have become the herald of <strong>most modern frontends and applications</strong>, with libraries like React and Vue.js, and frameworks like Gatsby and Next.js, and the many <em>many</em> other flavours that keep appearing almost daily. 😎`}}
+                dangerouslySetInnerHTML={{__html: `Now, JS/TS have become the herald of <strong>most modern frontends and applications</strong>, with libraries like React and Vue.js, and frameworks like Gatsby and Next.js, and the many, <em>many</em> other flavours that keep appearing almost daily. 😎`}}
               />
             </Box>
           </Grow>

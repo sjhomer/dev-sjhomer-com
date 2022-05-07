@@ -8,7 +8,7 @@ const projectDrupalPortals = {
   title: 'Drupal + React Portals Theme',
   description: <>
     <Typography gutterBottom>
-      {`Support in architecting and guiding a team on alternative ways to leverage React within Drupal’s more ridged theme system.`}
+      {`Support the team in architecting and guiding them on alternative ways to leverage React within Drupal’s more ridged theme system.`}
     </Typography>
     <List
       items={[

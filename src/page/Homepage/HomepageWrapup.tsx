@@ -23,7 +23,7 @@ export default function HomepageWrapup() {
           That’s a wrap, for now.
         </Typography>
         <Typography variant="body1" gutterBottom>
-          {`If you made it this far, I’m eternally grateful, and hope my path had some worthwhile insights. I could talk endlessly about topics around development from my journey, and where I hope to keep moving in the future, but everything must come to an end. So until next time, cheers!`}
+          {`If you made it this far, I’m eternally grateful, and hope my path had some worthwhile insights. I could talk endlessly about topics around development from my journey, or where I hope to keep moving in the future, but, everything must come to an end. So until next time, cheers!`}
         </Typography>
       </Box>
     </>
