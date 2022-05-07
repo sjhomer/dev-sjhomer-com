@@ -10,12 +10,12 @@ export default function HomepageSeniorJob() {
   let techAndSkill = [
     {
       label: 'Tech',
-      caption: 'JS, CoffeeScript, NodeJs, MongoDB, Drupal, PHP, Twig, Sass, Material UI, React, Gatsby, Shell Scripting/CLIs',
+      caption: 'JS, Redux, React, CoffeeScript, NodeJs, MongoDB, Drupal, PHP, Twig, Sass, Material UI, Gatsby, Graphql, Shell Scripting/CLIs, JetBrain IDEs',
       icon: <ImportantDevicesTwoToneIcon />,
     },
     {
       label: 'Skills & Services',
-      caption: 'Agile Project Management, Product Strategy, UX, Technical Strategy, Technical Architecture, Mentorship, Development Lead, DevOps, Pantheon, Platform.sh, Gatsby Cloud, Netlify, ASW Amplify, Jenkins, Bitbucket w/Pipelines, Github w/Actions',
+      caption: 'Agile Project Management, Product Strategy, UX, Technical Strategy, Technical Architecture, Mentorship, Development Lead, DevOps, Pantheon, Platform.sh, Gatsby Cloud, Netlify, ASW Amplify, Locize, Sentry, CommerceLayer, Paypal, Stripe, Jenkins, Bitbucket w/Pipelines, Github w/Actions',
       icon: <MilitaryTechTwoToneIcon />,
     },
   ]

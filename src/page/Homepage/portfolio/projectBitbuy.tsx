@@ -14,7 +14,7 @@ const projectBitbuy = {
       items={[
         {
           label: 'Tech',
-          caption: 'React, Gatsby, NodeJs, Drupal, JSONAPI, WordPress, REST APIs',
+          caption: 'React, Gatsby, Sass, NodeJs, Drupal, WordPress, Graphql, JSONAPI, REST APIs',
           icon: <ImportantDevicesTwoToneIcon />,
         },
         {

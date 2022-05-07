@@ -14,7 +14,7 @@ const projectGlobalEcommSolution = {
       items={[
         {
           label: 'Tech',
-          caption: 'React, Gatsby, Storybook, NodeJs, Serverless, Graphql, REST APIs',
+          caption: 'React, Redux, Gatsby, Sass, Storybook, NodeJs, Serverless, Drupal, Graphql, REST APIs, Jest',
           icon: <ImportantDevicesTwoToneIcon />,
         },
         {

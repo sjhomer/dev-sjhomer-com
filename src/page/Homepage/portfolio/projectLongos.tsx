@@ -14,7 +14,7 @@ const projectLongos = {
       items={[
         {
           label: 'Tech',
-          caption: 'React, Gatsby, Cypress, Drupal, JSONAPI, REST APIs',
+          caption: 'React, Redux, React Native, Gatsby, Sass, Cypress, Drupal, Graphql, JSONAPI, REST APIs',
           icon: <ImportantDevicesTwoToneIcon />,
         },
         {

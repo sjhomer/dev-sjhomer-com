@@ -14,7 +14,7 @@ const projectETC = {
       items={[
         {
           label: 'Tech',
-          caption: 'React, Gatsby, Cypress, Drupal, JSONAPI, REST APIs',
+          caption: 'React, Gatsby, Sass, Cypress, Drupal, Graphql, JSONAPI, REST APIs',
           icon: <ImportantDevicesTwoToneIcon />,
         },
         {
