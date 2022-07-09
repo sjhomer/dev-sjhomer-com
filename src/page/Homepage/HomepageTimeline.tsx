@@ -1,5 +1,4 @@
 import * as React from 'react'
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 import DeveloperBoardIcon from '@mui/icons-material/DeveloperBoard'
 import {Timeline} from '@web/components/grids'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
@@ -24,11 +23,14 @@ const linkedInLink = <Link
 
 const timelineData = [
   {
-    supporting: 'Jun 2022',
-    title: 'Seeking new opportunities',
-    caption: linkedInLink,
+    supporting: <span>Jun 2022 &mdash;&gt; Present</span>,
+    title: 'Battlefy, Inc.',
+    caption:
+      <span>
+        Senior Staff Engineer<br />
+      </span>,
     icon: {
-      icon: <EmojiEventsIcon />,
+      icon: <DeveloperBoardIcon />,
     },
     iconColor: 'secondary',
   },
