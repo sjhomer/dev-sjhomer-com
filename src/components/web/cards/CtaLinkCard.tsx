@@ -15,8 +15,8 @@ export interface CtaLinkCardLink {
 }
 
 export type CtaLinkCardProps = {
-  title?: string,
-  description?: string | JSX.Element,
+  title: string,
+  description: string | JSX.Element,
   links?: CtaLinkCardLink[],
   imageData?: {
     src: string,
@@ -25,7 +25,7 @@ export type CtaLinkCardProps = {
 }
 
 export default function CtaLinkCard({title, description, imageData, links = []}: CtaLinkCardProps) {
-  const image = imageData ? <Image {...imageData} /> : null
+  const image = imageData ? <Image {...imageData} alt={title} width={335} height={335} /> : null
 
   return (
     <Card className={'cta-link-card'} variant="outlined" sx={{
