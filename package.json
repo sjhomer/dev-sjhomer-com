@@ -16,6 +16,7 @@
     "@mui/icons-material": "^5.6.2",
     "@mui/lab": "^5.0.0-alpha.78",
     "@mui/material": "^5.6.1",
+    "@vercel/speed-insights": "^1.0.1",
     "devicon": "^2.15.1",
     "next": "14.0.4",
     "prismjs": "^1.27.0",
