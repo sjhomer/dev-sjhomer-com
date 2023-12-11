@@ -6,6 +6,7 @@ import projectGlobalEcommSolution from './portfolio/projectGlobalEcommSolution'
 import projectBitbuy from './portfolio/projectBitbuy'
 import projectETC from './portfolio/projectETC'
 import projectLongos from './portfolio/projectLongos'
+import projectRecoveryGPT from "@/components/Homepage/portfolio/projectRecoveryGPT"
 
 interface useHomepagePortfolioReturn {
   ctas: CtaLinkCardProps[]
@@ -16,6 +17,7 @@ export default function useHomepagePortfolio(): useHomepagePortfolioReturn {
   const theme = useTheme()
 
   const data = [
+    useCtaLinkCardModals(projectRecoveryGPT),
     useCtaLinkCardModals(projectGlobalEcommSolution),
     useCtaLinkCardModals(projectETC),
     useCtaLinkCardModals(projectBitbuy),
