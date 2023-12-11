@@ -65,7 +65,7 @@ export default function AudioPlayer({src, title, artist, album, cover}: AudioPla
     return () => {
       stop()
     }
-  }, [])
+  }, [stop])
 
   // Can't load if no audio found.
   if (!src || !sound) {
