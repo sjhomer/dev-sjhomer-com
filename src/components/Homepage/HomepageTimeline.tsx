@@ -35,7 +35,7 @@ const timelineData = [
     iconColor: 'secondary',
   },
   {
-    supporting: <span>Dec 2014 &mdash;&gt; May 2022</span>,
+    supporting: <span>Dec 2014 &mdash;&gt; Jun 2022</span>,
     title: 'Therefore Interactive',
     caption:
       <span>
