@@ -39,7 +39,7 @@ export default function HomepagePortfolio() {
             mb: 2,
           }}
           >
-            {`Recent Projects`}
+            {`Noteworthy Projects`}
           </Typography>
           <Typography
             variant="body1" sx={{
@@ -54,7 +54,7 @@ export default function HomepagePortfolio() {
             width: 675,
           }}
           >
-            {`Case studies on recent projects which I led and contributed too.`}
+            {`Case studies on projects which I led and contributed too.`}
           </Typography>
         </Grid>
       </Grid>
