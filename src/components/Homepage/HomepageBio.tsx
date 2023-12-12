@@ -56,13 +56,13 @@ export default function HomepageBio() {
             }}
             >
               <Typography variant="h5" component="div" gutterBottom>
-                {`Hi, I’m Homer. Being in Web Development for almost two decades, I’ve specialized in Frontend for over half my career, and transitioned into leading teams for the past six years.`}
+                {`Hi, I’m Homer. With nearly two decades in Web Development, my expertise predominantly lies in Fullstack with a strong inclination towards Frontend. In the last six years, I have evolved into a leadership role, guiding teams to achieve collective success in our projects.`}
               </Typography>
               <Typography
                 variant="subtitle1"
                 gutterBottom
                 marginTop={2}
-                dangerouslySetInnerHTML={{__html: `<strong>Over the past eight years</strong>, I have been fully remote, working with distributed teams across the Americas, Europe, and India. 🌎 It has been a privilege to work with such a diverse group on many client projects, both large and small across many industries, leveraging a wide range of technologies.`}}
+                dangerouslySetInnerHTML={{__html: `For almost a decade I've had the enriching experience of <strong>remotely leading diverse teams</strong> located throughout the Americas, Europe, and India. 🌎 This opportunity allowed me to collaborate with a wide array of professionals on various client projects, ranging from small-scale initiatives to large, complex ones, across multiple industries. This experience has been instrumental in harnessing an extensive variety of technologies.`}}
               />
               <Typography variant="body1" gutterBottom>
                 {`The Web never sleeps; if you blink, you might miss the mark and be playing catch up.🙃Thankfully, I was fortunate enough to be immersed in the rising tide of Jamstack (even before it was called such), and grateful to of led the builds on three enterprise sites, and an application. 💪🏻`}
