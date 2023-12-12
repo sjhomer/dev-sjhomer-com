@@ -5,10 +5,10 @@ import MilitaryTechTwoToneIcon from "@mui/icons-material/MilitaryTechTwoTone"
 import * as React from "react"
 
 const projectGlobalEcommSolution = {
-  title: "Global Ecommerce Webstore",
+  title: "Trudel Medical International",
   description: <>
     <Typography gutterBottom>
-      {`Through extensive planning and architecting, we’ve been working to establish a global ready decoupled ecommerce solution for a dear client. By empowering them to with flexible content controls, they can adapt content to store/languages while associating to the commerce layer separately, simplifying the editing vs product management experience immensely. Running a sleek UI, solid UX, and i18n ingrained, it offers a pleasant global commerce experience.`}
+      {`Through extensive planning and architecting, we’ve been working to establish a global ready decoupled ecommerce solution for Trudel. By empowering them to with flexible content controls, they can adapt content to store/languages while associating to the commerce layer separately, simplifying the editing vs product management experience immensely. Running a sleek UI, solid UX, and i18n ingrained, it offers a pleasant global commerce experience.`}
     </Typography>
     <List
       items={[
@@ -26,10 +26,10 @@ const projectGlobalEcommSolution = {
     />
   </>,
   links: [
-    // {
-    //   label: 'Coming soon',
-    // href: 'https://www.therefore.ca/case-studies/bitbuy',
-    // },
+    {
+      label: "Learn more",
+      href: "https://www.trudellmed.com/",
+    },
   ],
 }
 
