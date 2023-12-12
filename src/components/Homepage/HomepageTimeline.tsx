@@ -48,7 +48,7 @@ const timelineData = [
     },
   },
   {
-    supporting: <span>Dec 2014 &mdash;&gt; Oct 2009</span>,
+    supporting: <span>Oct 2009 &mdash;&gt; Dec 2014</span>,
     title: 'RC Design',
     caption:
       <span>
@@ -59,7 +59,7 @@ const timelineData = [
     },
   },
   {
-    supporting: <span>Sep 2009 &mdash;&gt; Apr 2005</span>,
+    supporting: <span>Apr 2005 &mdash;&gt; Sep 2009</span>,
     title: <span style={{display: 'inline-flex', alignItems: 'center'}}>
       SteelSeries
       &nbsp;
