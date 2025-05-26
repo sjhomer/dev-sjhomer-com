@@ -18,6 +18,7 @@ export default function Home() {
           <Homepage.HomepageEntryJob/>
           <Homepage.HomepageIntermediateJob/>
           <Homepage.HomepageSeniorJob/>
+          <Homepage.HomepageLeadershipJob/>
           <Homepage.HomepageWrapup/>
         </>
       </Layout>

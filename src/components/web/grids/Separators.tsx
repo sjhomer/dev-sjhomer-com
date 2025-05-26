@@ -10,6 +10,7 @@ import HikingTwoToneIcon from '@mui/icons-material/HikingTwoTone'
 import {Audiotrack, Portrait} from '@mui/icons-material'
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents'
 import SchoolIcon from '@mui/icons-material/School'
+import LeaderboardIcon from '@mui/icons-material/Leaderboard';
 
 export const ArrowSeparator = (props) => {
   return (
@@ -62,6 +63,12 @@ export const HikingSeparator = (props) => {
 export const MountainSeparator = (props) => {
   return (
     <Divider {...props}><FilterHdrTwoToneIcon /></Divider>
+  )
+}
+
+export const LeaderboardSeparator = (props) => {
+  return (
+    <Divider {...props}><LeaderboardIcon /></Divider>
   )
 }
 

@@ -5,6 +5,7 @@ import {List, Separators} from '@/components/web/grids'
 import Grid from '@mui/material/Grid'
 import ImportantDevicesTwoToneIcon from '@mui/icons-material/ImportantDevicesTwoTone'
 import MilitaryTechTwoToneIcon from '@mui/icons-material/MilitaryTechTwoTone'
+import {LeaderboardSeparator} from "@/components/web/grids/Separators";
 
 export default function HomepageSeniorJob() {
   let techAndSkill = [
@@ -37,7 +38,7 @@ export default function HomepageSeniorJob() {
         }}
       >
         <Typography variant="h4" component="h2" textAlign={'left'} gutterBottom>
-          Honing my Craft and Leading
+          Therefore: Honing my Craft and Leading
         </Typography>
         <Grid container marginBottom={2} spacing={{xs: 1, md: 8}}>
           <Grid item xs={12} md={6}>
@@ -113,7 +114,7 @@ export default function HomepageSeniorJob() {
           {`A key lesson I’ve learned about fostering good developers is that they should not need to know everything. The better they can unpack knowledge and jump back into library/frameworks API docs when they need to use again, means they can always solve problems without a lead looking over their shoulder. I urge my team to keep a site like DevDocs pinned at all times to look up how to reuse methods and refresh core concepts as a healthy practice. And, not only to they write better code for it, they continue learning about extra flags/options or other tidbits they may have missed previously when they review it. This helps them to keep expanding their knowledge and improve. It’s truly a marvelous thing.`}
         </Typography>
       </Box>
-      <Separators.FinishSeparator />
+      <Separators.LeaderboardSeparator />
     </>
   )
 }
