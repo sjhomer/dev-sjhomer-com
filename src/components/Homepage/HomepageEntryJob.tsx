@@ -37,7 +37,7 @@ export default function HomepageEntryJob() {
         }}
       >
         <Typography variant="h4" component="h3" textAlign={'left'} gutterBottom>
-          Learning the Ropes
+          Steelseries: Learning the Ropes
         </Typography>
         <Grid container marginBottom={2} spacing={{xs: 1, md: 8}}>
           <Grid item xs={12} md={6}>

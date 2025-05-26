@@ -27,7 +27,9 @@ const timelineData = [
     title: 'Battlefy, Inc.',
     caption:
       <span>
-        Senior Staff Engineer<br />
+        Head of Engineering<br />
+        Engineering Manager, 9m<br />
+        Senior Staff Engineer 11m<br />
       </span>,
     icon: {
       icon: <DeveloperBoardIcon />,

@@ -37,7 +37,7 @@ export default function HomepageIntermediateJob() {
         }}
       >
         <Typography variant="h4" component="h2" textAlign={'left'} gutterBottom>
-          Cementing my Foundation
+          RC Design: Cementing my Foundation
         </Typography>
         <Grid container marginBottom={2} spacing={{xs: 1, md: 8}}>
           <Grid item xs={12} md={6}>

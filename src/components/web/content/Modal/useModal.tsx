@@ -31,6 +31,7 @@ export default function useModal({sx, TransitionComp = Fade, title, content, act
   const button = <Button onClick={state.handleOpen}>{buttonLabel || `Open modal`}</Button>
 
   const modal = <Dialog
+    key={`${state.id}-modal-title`}
     aria-labelledby={`${state.id}-modal-title`}
     aria-describedby={`${state.id}-modal-description`}
     open={state.open}
